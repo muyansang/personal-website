@@ -3,6 +3,11 @@
   src: url('fonts/impact.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'acumin';
+  src: url('fonts/Acumin-RPro.otf') format('opentype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +43,13 @@
 p.impact_font,
 button.nav_text {
     font-family: 'impact';
+    font-size: 20px;
+    color: #fef8d0;
+    text-align: center;
+}
+
+p.acumin_font {
+    font-family: 'acumin';
     font-size: 20px;
     color: #fef8d0;
     text-align: center;
@@ -83,23 +95,22 @@ button.nav_bar_button:hover::after {
 
 .splash {
     margin: 10px;
-    height: 600px;
+    height: 500px;
     width: auto;
 }   
 
 /* 处理intro 文字 */
 .style_bar_text {
-  max-width: 800px;     
-  width: 100%;          
-  margin: 20px auto 0;  
-  padding: 0 20px;      
+  max-width: 700px;     
+  width: 100%;
+  margin-bottom: 20px;          
   text-align: center;   
 }
 
 /* 处理滚动动画 */
 p.scrolling_text {
     font-size: 200px;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .style_bar {
@@ -134,21 +145,26 @@ p.scrolling_text {
 }
 
 .scroll_row.top {
-top: 0;
-  animation: scroll_left 5s linear infinite;
+    top: 0;
+  animation: scroll_left 60s linear infinite;
 }
+
 
 .scroll_row.bottom {
     bottom: 0;
-  animation: scroll_right 5s linear infinite;
+  animation: scroll_right 60s linear infinite;
+}
+
+.scrolling_text2 span{
+    animation-delay: 5s;
 }
 
 @keyframes scroll_left {
   0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-10%); }
 }
 
 @keyframes scroll_right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0%); }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(10%); }
 }

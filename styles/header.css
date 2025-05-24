@@ -3,53 +3,152 @@
   src: url('fonts/impact.ttf') format('truetype');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(to bottom, #000000, #0000),#ff5a4e;
+}
+
+.style_bar{
+    padding: 20px;
+    gap: 20px;
+    background-color: #ff5a4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header,
 .nav_bar{
     display: flex;
     flex-direction: row;
-    margin: 20px;
 }
+
 
 .nav_bar{
-    padding: 10px;
-    gap: 20px;
-}
-
-button.nav_bar_button {
-    background: none;     /* 移除背景 */
-    border: none;         /* 移除边框 */
-    padding: 0;           /* 可选：移除内部空隙 */
-    cursor: pointer;      /* 鼠标悬停时变成小手 */
+    gap: 30px;
+    margin-left: 40px;
+    align-items: center;
 }
 
 p.impact_font,
 button.nav_text {
     font-family: 'impact';
     font-size: 20px;
-    /* color: #fef8d0; */
-    color: #000000;
+    color: #fef8d0;
     text-align: center;
 }
 
 /* 处理Button的hover*/
-button.nav_text {
-  position: relative;
-  display: inline-block;
+button.nav_bar_button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'impact';
+    color: #fef8d0;
+    text-align: center;
 }
 
-button.nav_text::after {
-  content: "";
+button.nav_bar_button::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fef8d0;
+    transform-origin: left;
+    transition: width 0.2s ease;
+}
+
+button.nav_bar_button:hover::after {
+    width: 100%;
+}
+
+/* 处理所有图片相关的 */
+.logo {
+    margin: 10px;
+    height: 80px;
+    width: auto;
+}
+
+.splash {
+    margin: 10px;
+    height: 600px;
+    width: auto;
+}   
+
+/* 处理intro 文字 */
+.style_bar_text {
+  max-width: 800px;     
+  width: 100%;          
+  margin: 20px auto 0;  
+  padding: 0 20px;      
+  text-align: center;   
+}
+
+/* 处理滚动动画 */
+p.scrolling_text {
+    font-size: 200px;
+    opacity: 0.3;
+}
+
+.style_bar {
+  position: relative;     
+  overflow: hidden;        
+  background-color: #ff5a4e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll_container {
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: -4px; 
   width: 100%;
-  height: 2px;
-  background-color: white;
-  transform: scaleX(0);           
-  transform-origin: left;         
-  transition: transform 0.3s ease;
+  height: 100%;         
+  z-index: -1;          
+  pointer-events: none; 
+  overflow: hidden;
 }
 
-button.nav_text:hover::after {
-  transform: scaleX(1);           
+.scroll_row {
+  position: absolute;
+  white-space: nowrap;
+  color: rgba(254, 248, 208, 0.2);
+  z-index: 0;
+  pointer-events: none;
+    line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.scroll_row.top {
+top: 0;
+  animation: scroll_left 5s linear infinite;
+}
+
+.scroll_row.bottom {
+    bottom: 0;
+  animation: scroll_right 5s linear infinite;
+}
+
+@keyframes scroll_left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll_right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
 }

@@ -11,20 +11,29 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
+    <!-- Header Starts -->
     <div>
         <header class="header">
-            <img src="assets/logo.png" alt="Logo" class = "logo">
-            
             <div class="nav_bar">
-                <button class="nav_bar_button nav_text impact_font">PORTFOLIO</button>
-                <button class="nav_bar_button nav_text impact_font">ABOUT</button>
-                <button class="nav_bar_button nav_text impact_font">RESUME</button>
-                <button class="nav_bar_button nav_text impact_font">ARTSTATION</button>
-                <button class="nav_bar_button nav_text impact_font">CONTACT</button>
+                <img src="assets/logo.png" alt="Logo" class = "logo">
+
+                <button class="nav_bar_button nav_text impact_font" id="portfolio_button">PORTFOLIO</button>
+                <button class="nav_bar_button nav_text impact_font" id="about_button">ABOUT</button>
+                <button class="nav_bar_button nav_text impact_font" id="resume_button">RESUME</button>
+                <button class="nav_bar_button nav_text impact_font" id="artstation_button">ARTSTATION</button>
+                <button class="nav_bar_button nav_text impact_font" id="contact_button">CONTACT</button>
+
+            </div>
+
+            <div class = "language">
+                <button class = "language_button" id = "language_button">
+                    <img src= "assets/language.png" alt="language" class = "language_icon">
+                </button>
             </div>
 
         </header>
     </div>
+    <!-- Header Ends-->
 
     <!-- Style Bar STARTS -->
     <div class = "style_bar">
@@ -47,7 +56,7 @@
 
 
     <!-- PORTFOLIO STARTS -->
-    <div class = "portfolio">
+    <div class = "portfolio" id = "portfolio">
         <div class = "fit_text_wrapper">
             <h1 class = "impact_font portfolio_title">PORTFOLIO</h1>
         </div>
@@ -84,7 +93,7 @@
     <!-- PORTFOLIO ENDS -->
 
     <!-- ABOUT ME STARTS -->
-    <div class="about_me">
+    <div class="about_me" id="about_me">
         <div class="about_me_inner">
             <img src="assets/portrait.png" alt="personal_pic" class="personal_pic" />
 
@@ -106,11 +115,12 @@
                 </div>
             </div>
         </div>
+
     </div>
     <!-- ABOUT ME END -->
 
     <!-- FOOTER START -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer_icons">
             <a href="https://github.com/yourusername" target="_blank">
                 <img src="assets/github.png" alt="GitHub" />
@@ -129,6 +139,33 @@
         <p class="footer_text">Copyright © 2024, Jacky Pan. All rights reserved.</p>
     </footer>
     <!-- FOOTER END -->
+
+    <!-- Language Menu Starts -->
+    <div class="language_menu hidden" id = "language_menu">
+        <div class="language_menu_inner">
+            <div class="language_list">
+                <ul>
+                    <li class="language_item selected" data-lang="english">English</li>
+                    <li class="language_item" data-lang="chinese">简体中文</li>
+                    <li class="language_item" data-lang="cantonese">繁体中文</li>
+                </ul>
+            </div>
+
+            <div class="selected_list">
+                <ul>
+                    <li class="english_selected" id = "english_selected">✓</li>
+                    <li class="chinese_selected hidden_text" id = "chinese_selected">✓</li>
+                    <li class="cantonese_selected hidden_text" id = "cantonese_selected">✓</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Language Menu Ends -->
+
+    <!-- Loading JS -->
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/language.js"></script>
+    <!-- Done Loading JS -->
 
 </body>
 

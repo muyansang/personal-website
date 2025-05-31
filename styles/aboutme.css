@@ -1,0 +1,48 @@
+.about_me {
+    display: flex;
+    justify-content: center;         /* 整体水平居中 */
+    width: 100%;
+    background-color: #fffef0;       /* 可选背景色，保持统一 */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.about_me_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.personal_pic {
+    max-width: 30vw;
+    height: auto;
+    border-radius: 40px;
+}
+
+.about_me_text {
+    flex: 1;
+    width: 30vw;
+}
+
+h1.about_me_title {
+    font-size: 3vw;
+    font-family: 'impact';
+    color: #ff5a4e;
+    margin-bottom: 20px;
+}
+
+.about_me_paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about_me_paragraph p {
+    font-size: 18px;
+    line-height: 1.7;
+}

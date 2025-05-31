@@ -1,0 +1,122 @@
+body {
+    background-color: #fffcec;
+}
+
+.hidden {
+    display: none;
+}
+
+.impact_font {
+    font-family: 'impact'
+}
+
+.fit_text_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1.portfolio_title {
+  font-size: 23vw;
+  white-space: nowrap;
+
+  background: linear-gradient(to bottom, #ff5a4e, #0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 处理作品单个card的css */
+
+.game_cover {
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(to right, #000000, #0000);
+  border-radius: 20px;
+  transition: width 0.2s ease;
+  pointer-events: none; /* 避免它挡住 hover */
+}
+
+.card:hover .overlay::after {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 45vw;
+  aspect-ratio: 1280 / 720;
+  overflow: hidden;
+}
+
+
+
+.game_description {
+  gap: 0.7vw;
+  color: #fffcec;
+  flex-direction: column;
+  max-width: 12vw;
+  font-size: 1vw;
+  padding-left: 1.5vw;
+}
+
+.game_cover,
+.game_description,
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 处理多个card的排版 */
+
+.card_row {
+  display: flex;
+  flex-direction: row;
+  gap: 70px
+}
+
+.card_column {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10vw;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+      .card_row {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .card {
+        width: 85vw;
+      }
+
+      .game_description {
+        font-size: 4vw;
+        padding: 10px;
+      }
+    }

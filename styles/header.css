@@ -50,6 +50,9 @@ button.nav_text {
 
 p.acumin_font {
     font-family: 'acumin';
+}
+
+.style_bar_text p {
     font-size: 20px;
     color: #fef8d0;
     text-align: center;
@@ -89,7 +92,7 @@ button.nav_bar_button:hover::after {
 /* 处理所有图片相关的 */
 .logo {
     margin: 10px;
-    height: 80px;
+    height: 90px;
     width: auto;
 }
 

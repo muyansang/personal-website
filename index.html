@@ -1,172 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Jacky Pan</title>
-    <link rel="icon" href="logo.png" type="image/png">
-
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
-    <link rel="stylesheet" href="styles/aboutme.css">
-    <link rel="stylesheet" href="styles/footer.css">
+  <meta charset="UTF-8" />
+  <title>Jacky Pan</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/aboutme.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <!-- Header Starts -->
-    <div>
-        <header class="header">
-            <div class="nav_bar">
-                <img src="assets/logo.png" alt="Logo" class = "logo">
-
-                <button class="nav_bar_button nav_text impact_font" id="portfolio_button">PORTFOLIO</button>
-                <button class="nav_bar_button nav_text impact_font" id="about_button">ABOUT</button>
-                <button class="nav_bar_button nav_text impact_font" id="resume_button">RESUME</button>
-                <button class="nav_bar_button nav_text impact_font" id="artstation_button">ARTSTATION</button>
-                <button class="nav_bar_button nav_text impact_font" id="contact_button">CONTACT</button>
-
-            </div>
-
-            <div class = "language">
-                <button class = "language_button" id = "language_button">
-                    <img src= "assets/language.png" alt="language" class = "language_icon">
-                </button>
-            </div>
-
-        </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav_bar">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+      <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
+      <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
     </div>
-    <!-- Header Ends-->
-
-    <!-- Style Bar STARTS -->
-    <div class = "style_bar">
-        <div class="scroll_row top">
-            <p class = "impact_font scrolling_text"> JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN  JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN </p>
-            <p class = "impact_font scrolling_text scrolling_text2"> JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN </p>
-        </div>
-        <img src="assets/splash.png" alt="Jacky Pan" class = "splash">
-
-        <div class = "style_bar_text">
-            <p class = "acumin_font">I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature unique mechanics that push players to adapt and think creatively.</p>
-        </div>
-
-        <div class="scroll_row bottom">
-            <p class = "impact_font scrolling_text"> JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN </p>
-            <p class = "impact_font scrolling_text scrolling_text2"> JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN JACKY PAN </p>
-        </div>
+    <div class="language">
+      <button class="language_button" id="language_button">
+        <img src="assets/language.png" alt="language" class="language_icon">
+      </button>
     </div>
-    <!-- Style Bar ENDS -->
+  </header>
 
-
-    <!-- PORTFOLIO STARTS -->
-    <div class = "portfolio" id = "portfolio">
-        <div class = "fit_text_wrapper">
-            <h1 class = "impact_font portfolio_title">PORTFOLIO</h1>
-        </div>
-
-        <div class = "card_column">
-            <div class = "card_row">
-                <!-- Card 1 -->
-                <div class="card">
-                    <img src="assets/toymare.png" alt="Toymare Art" class = "game_cover" />
-                    <div class="overlay"></div>
-                    <div class = "game_description">
-                        <div>
-                            <h2 class = "impact_font hidden">Toymare</h2>
-                        </div>
-
-                        <div>
-                            <p class = "acumin_font hidden">A 3D horror game where you play as a child who has to escape from a haunted toy factory.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <img src="assets/toymare.png" alt="Toymare Art" class = "game_cover" />
-                    <div class="overlay"></div>
-                    <div class = "game_description">
-                        <h2 class = "impact_font hidden">Toymare</h2>
-                        <p class = "acumin_font hidden">A 3D horror game where you play as a child who has to escape from a haunted toy factory.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Style Bar -->
+  <div class="style_bar">
+    <div class="scroll_row top">
+      <p class="impact_font scrolling_text">JACKY PAN JACKY PAN JACKY PAN</p>
+      <p class="impact_font scrolling_text scrolling_text2">JACKY PAN JACKY PAN JACKY PAN</p>
     </div>
-    <!-- PORTFOLIO ENDS -->
-
-    <!-- ABOUT ME STARTS -->
-    <div class="about_me" id="about_me">
-        <div class="about_me_inner">
-            <img src="assets/portrait.png" alt="personal_pic" class="personal_pic" />
-
-            <div class="about_me_text">
-                <h1 class="impact_font about_me_title">ABOUT ME</h1>
-                <div class="about_me_paragraph">
-                    <p class="acumin_font about_me_text">
-                        Hi, I'm Andy! I'm 20 and I'm currently a senior student at Cornell University. I'm majoring in Computer Science with a minor in Game Design. I have been programming for over 6 years and have experience in making games for over 3 years.
-                    </p>
-                    <p class="acumin_font about_me_text">
-                        Since I was a kid, I've always had three big goals on my bucket list: to make a positive impact on my community, to travel and learn about the diverse cultures of our planet, and to live a happy life.
-                    </p>
-                    <p class="acumin_font about_me_text">
-                        While I might not be the best judge of how much impact I've made, I can confidently say that I'm living a happy life, thanks to the incredible people I've met and the perspectives I've gained from traveling the world. It may not seem like much, but I'm deeply grateful for everything I have.
-                    </p>
-                    <p class="acumin_font about_me_text">
-                        When I'm not working on my next project, I love taking time off to be with friends and family. I also enjoy indulging in activities like tennis, skiing, cooking, watching movies, listening to music, and, of course, gaming.
-                    </p>
-                </div>
-            </div>
-        </div>
-
+    <img src="assets/splash.png" alt="Jacky Pan" class="splash">
+    <div class="style_bar_text">
+      <p class="acumin_font" data-i18n="style_bar_text"></p>
     </div>
-    <!-- ABOUT ME END -->
-
-    <!-- FOOTER START -->
-    <footer class="footer" id="footer">
-        <div class="footer_icons">
-            <a href="https://github.com/yourusername" target="_blank">
-                <img src="assets/github.png" alt="GitHub" />
-            </a>
-            <a href="https://www.artstation.com/jackypan5" target="_blank">
-                <img src="assets/artstation.png" alt="ArtStation" />
-            </a>
-            <a href="https://www.linkedin.com/in/jacky-pan-65756430a/" target="_blank">
-                <img src="assets/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="mailto:muyansang233@gmail.com">
-                <img src="assets/mail.png" alt="Email" />
-            </a>
-        </div>
-
-        <p class="footer_text">Copyright © 2024, Jacky Pan. All rights reserved.</p>
-    </footer>
-    <!-- FOOTER END -->
-
-    <!-- Language Menu Starts -->
-    <div class="language_menu hidden" id = "language_menu">
-        <div class="language_menu_inner">
-            <div class="language_list">
-                <ul>
-                    <li class="language_item selected" data-lang="english">English</li>
-                    <li class="language_item" data-lang="chinese">简体中文</li>
-                    <li class="language_item" data-lang="cantonese">繁体中文</li>
-                </ul>
-            </div>
-
-            <div class="selected_list">
-                <ul>
-                    <li class="english_selected" id = "english_selected">✓</li>
-                    <li class="chinese_selected hidden_text" id = "chinese_selected">✓</li>
-                    <li class="cantonese_selected hidden_text" id = "cantonese_selected">✓</li>
-                </ul>
-            </div>
-        </div>
+    <div class="scroll_row bottom">
+      <p class="impact_font scrolling_text">JACKY PAN JACKY PAN JACKY PAN</p>
+      <p class="impact_font scrolling_text scrolling_text2">JACKY PAN JACKY PAN JACKY PAN</p>
     </div>
-    <!-- Language Menu Ends -->
+  </div>
 
-    <!-- Loading JS -->
-    <script src="scripts/jquery-3.7.1.js"></script>
-    <script src="scripts/language.js"></script>
-    <!-- Done Loading JS -->
+  <!-- Portfolio -->
+  <div class="portfolio" id="portfolio">
+    <div class="fit_text_wrapper">
+      <h1 class="impact_font portfolio_title">PORTFOLIO</h1>
+    </div>
+    <div class="card_column">
+      <div class="card_row">
+        <div class="card">
+          <img src="assets/toymare.png" alt="Toymare Art" class="game_cover" />
+          <div class="overlay"></div>
+          <div class="game_description">
+            <h2 class="impact_font" data-i18n="portfolio.card_1.title"></h2>
+            <p class="acumin_font genre" data-i18n="portfolio.card_1.genre"></p>
+            <p class="acumin_font" data-i18n="portfolio.card_1.description"></p>
+            <button class="view_button impact_font" data-i18n="portfolio.card_1.button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/toymare.png" alt="Toymare Art" class="game_cover" />
+          <div class="overlay"></div>
+          <div class="game_description">
+            <h2 class="impact_font" data-i18n="portfolio.card_2.title"></h2>
+            <p class="acumin_font genre" data-i18n="portfolio.card_2.genre"></p>
+            <p class="acumin_font" data-i18n="portfolio.card_2.description"></p>
+            <button class="view_button impact_font" data-i18n="portfolio.card_2.button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- About Me -->
+  <div class="about_me" id="about_me">
+    <div class="about_me_inner">
+      <img src="assets/portrait.png" alt="personal_pic" class="personal_pic" />
+      <div class="about_me_text">
+        <h1 class="impact_font about_me_title" data-i18n="about.title"></h1>
+        <div class="about_me_paragraph">
+          <p class="acumin_font about_me_text" data-i18n="about.p1"></p>
+          <p class="acumin_font about_me_text" data-i18n="about.p2"></p>
+          <p class="acumin_font about_me_text" data-i18n="about.p3"></p>
+          <p class="acumin_font about_me_text" data-i18n="about.p4"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer_icons">
+      <a href="https://github.com/yourusername" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+      <a href="https://www.artstation.com/jackypan5" target="_blank"><img src="assets/artstation.png" alt="ArtStation" /></a>
+      <a href="https://www.linkedin.com/in/jacky-pan-65756430a/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:muyansang233@gmail.com"><img src="assets/mail.png" alt="Email" /></a>
+    </div>
+    <p class="footer_text" data-i18n="footer.copyright"></p>
+  </footer>
+
+  <!-- Language Menu -->
+  <div class="language_menu hidden" id="language_menu">
+    <div class="language_menu_inner">
+      <div class="language_list">
+        <ul>
+          <li class="language_item selected" data-lang="english" data-i18n="language_menu.english"></li>
+          <li class="language_item" data-lang="chinese" data-i18n="language_menu.chinese"></li>
+          <li class="language_item" data-lang="cantonese" data-i18n="language_menu.cantonese"></li>
+        </ul>
+      </div>
+      <div class="selected_list">
+        <ul>
+          <li class="english_selected" id="english_selected">✓</li>
+          <li class="chinese_selected hidden_text" id="chinese_selected">✓</li>
+          <li class="cantonese_selected hidden_text" id="cantonese_selected">✓</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/language.js"></script>
 </body>
-
 </html>

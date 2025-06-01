@@ -1,26 +1,37 @@
 // Description: 语言切换脚本 --------------------------------------------------------------------------------------------------------------------------------------------
 $(document).ready(function () {
-  // 初始化默认语言状态
   const defaultLang = "english";
-  updateLanguageUI(defaultLang);
+  const langMap = {
+    english: "text/en.json",
+    chinese: "text/cn.json",
+    cantonese: "text/tw.json"
+  };
 
-  // 点击语言按钮，切换菜单显隐 + active类
+  // 初始化语言
+  updateLanguageUI(defaultLang);
+  loadLanguage(defaultLang);
+
+  // 点击语言按钮展开/收起菜单
   $("#language_button").click(function () {
     const $menu = $("#language_menu");
-
     $menu.slideToggle(200, function () {
       $menu.toggleClass("active");
     });
   });
 
-  // 点击语言项
+  // 点击语言项切换语言
   $(".language_item").click(function () {
-    const lang = $(this).attr("data-lang");
+    const lang = $(this).data("lang");
     updateLanguageUI(lang);
+    loadLanguage(lang);
 
+    const $menu = $("#language_menu");
+    $menu.slideUp(200, function () {
+      $menu.removeClass("active");
+    });
   });
 
-  // 封装语言切换 UI 更新逻辑
+  // 切换语言 UI 状态（选中、高亮、打钩）
   function updateLanguageUI(lang) {
     $(".language_item").removeClass("selected");
     $(`.language_item[data-lang="${lang}"]`).addClass("selected");
@@ -33,7 +44,49 @@ $(document).ready(function () {
       }
     });
   }
+
+  // 加载 JSON 文件并更新页面文字
+  function loadLanguage(langKey) {
+    const langFile = langMap[langKey];
+    $.getJSON(langFile, function (data) {
+      $("[data-i18n]").each(function () {
+        const keys = $(this).data("i18n").split(".");
+        let text = data;
+        for (let k of keys) {
+          text = text?.[k];
+        }
+
+        if (text !== undefined) {
+          if ($(this).is("input, textarea")) {
+            $(this).attr("placeholder", text);
+          } else {
+            $(this).text(text);
+          }
+        }
+      });
+    });
+  }
+
+  // 页面滚动逻辑
+  $("#portfolio_button").click(function () {
+    $("html, body").animate({
+      scrollTop: $("#portfolio").offset().top
+    }, 500);
+  });
+
+  $("#about_button").click(function () {
+    $("html, body").animate({
+      scrollTop: $("#about_me").offset().top
+    }, 500);
+  });
+
+  $("#contact_button").click(function () {
+    $("html, body").animate({
+      scrollTop: $("#footer").offset().top
+    }, 500);
+  });
 });
+
 // Description: 语言切换脚本 --------------------------------------------------------------------------------------------------------------------------------------------
 
 // Description: Scroll Session --------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,3 +111,5 @@ $("#contact_button").click(function () {
 
 
 // Description: Scroll Session --------------------------------------------------------------------------------------------------------------------------------------------
+
+// Language switcher --------------------------------------------------------------------------------------------------------------------------------------------------

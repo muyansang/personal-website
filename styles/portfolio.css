@@ -67,14 +67,47 @@ h1.portfolio_title {
 
 
 
-.game_description {
+.game_description::after {
   gap: 0.7vw;
-  color: #fffcec;
-  flex-direction: column;
   max-width: 12vw;
-  font-size: 1vw;
   padding-left: 1.5vw;
+  pointer-events: none; /* 避免它挡住 hover */
 }
+
+.game_description {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  max-width: 300px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  margin-left: 40px;
+  gap: 10px;
+}
+
+.game_description h2 {
+  font-size: 24px;
+}
+
+.game_description p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.genre {
+  font-weight: bolder !important;
+}
+
+.card:hover .game_description {
+  opacity: 1;
+  pointer-events: auto; /* hover 时可以点击或选中文字 */
+}
+
+.game_description h2,
+.game_description p {
+    color: #fffcec;
+}
+
 
 .game_cover,
 .game_description,
@@ -86,6 +119,32 @@ h1.portfolio_title {
   height: 100%;
   display: flex;
   justify-content: center;
+}
+
+/* 处理view more button */
+.view_button {
+  font-weight: lighter;
+  position: absolute;
+  border: none;
+  bottom: 40px;
+  left: 50%;   
+  transform: translateX(-50%);
+  background-color: #ff5a4e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view_button {
+  scale: 1;
+  transition: scale 0.3s ease;
+}
+
+.view_button:hover {
+  scale: 1.05;
 }
 
 /* 处理多个card的排版 */
@@ -104,7 +163,7 @@ h1.portfolio_title {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
       .card_row {
         flex-direction: column;
         gap: 40px;
@@ -120,3 +179,5 @@ h1.portfolio_title {
         padding: 10px;
       }
     }
+
+  

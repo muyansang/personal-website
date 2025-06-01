@@ -1,0 +1,40 @@
+{
+    "nav": {
+        "portfolio": "PORTFOLIO",
+        "about": "ABOUT",
+        "resume": "RESUME",
+        "artstation": "ARTSTATION",
+        "contact": "CONTACT"
+    },
+    "style_bar_text": "I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature unique mechanics that push players to adapt and think creatively.",
+    "portfolio": {
+        "title": "PORTFOLIO",
+        "card_1": {
+        "title": "Toymare",
+        "genre": "Genre: Action + Puzzle",
+        "description": "A 3D horror game where you play as a child who has to escape from a haunted toy factory.",
+        "button": "View More"
+        },
+        "card_2": {
+        "title": "Toymare",
+        "genre": "Genre: Action + Puzzle",
+        "description": "A 3D horror game where you play as a child who has to escape from a haunted toy factory.",
+        "button": "View More"
+        }
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "p1": "Hi, I'm Andy! I'm 20 and I'm currently a senior student at Cornell University. I'm majoring in Computer Science with a minor in Game Design. I have been programming for over 6 years and have experience in making games for over 3 years.",
+        "p2": "Since I was a kid, I've always had three big goals on my bucket list: to make a positive impact on my community, to travel and learn about the diverse cultures of our planet, and to live a happy life.",
+        "p3": "While I might not be the best judge of how much impact I've made, I can confidently say that I'm living a happy life, thanks to the incredible people I've met and the perspectives I've gained from traveling the world. It may not seem like much, but I'm deeply grateful for everything I have.",
+        "p4": "When I'm not working on my next project, I love taking time off to be with friends and family. I also enjoy indulging in activities like tennis, skiing, cooking, watching movies, listening to music, and, of course, gaming."
+    },
+    "footer": {
+        "copyright": "Copyright © 2024, Jacky Pan. All rights reserved."
+    },
+    "language_menu": {
+        "english": "English",
+        "chinese": "简体中文",
+        "cantonese": "繁体中文"
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacky Pan</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/aboutme.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav_bar">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+      <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+      <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
+      <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+    </div>
+    <div class="language">
+      <button class="language_button" id="language_button">
+        <img src="assets/language.png" alt="language" class="language_icon">
+      </button>
+    </div>
+  </header>
+
+    <!-- Display -->
+    <div class="display_wrapper">
+    <video id="slideshowVideo" class="display" autoplay muted loop playsinline>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="display_layover"></div>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.info.title"></h1>
+        </div>
+        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.role.label"></strong> <span class = "info_text" data-i18n="game1.info.role.value"></span></p>
+        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.engine.label"></strong> <span class = "info_text" data-i18n="game1.info.engine.value"></span></p>
+        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.team.label"></strong> <span class = "info_text" data-i18n="game1.info.team.value"></span></p>
+        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.timeline.label"></strong> <span class = "info_text" data-i18n="game1.info.timeline.value"></span></p>
+    </div>
+
+    <!-- The Game -->
+    <div class="intro">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.intro.title"></h1>
+        </div>
+        <div class="intro_content">
+            <div class = "left_box">
+                <p><span class = "info_text acumin_font" data-i18n="game1.intro.text"></span></p>
+            </div>
+            <div class = "right_box">
+                <img src="assets/toymare.png" alt="language" class="intro_image">
+            </div>
+        </div>  
+    </div>
+    <!-- Game Design -->
+    <div class="game_design">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.game_design.title"></h1>
+        </div>
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game1.game_design.design_goals"></h1>
+        </div>
+    
+        <div class = "game_design_content">
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card1.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card1.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card2.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card2.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card3.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card3.text"></span></p> 
+            </div>
+        </div>
+    </div>
+    <!-- Game Mechanism -->
+    <div class="game_design">
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game1.game_design.game_mechanics"></h1>
+        </div>
+    
+        <div class = "game_mech_content">
+            <video id="slideshowVideo" width="1280" height="720" autoplay muted loop playsinline>
+                <source src="videos/video1.mp4" type="video/mp4" class="game_video">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <!-- UI/UX Design-->
+     <!-- Menu screen -->
+     <!-- Level Selection -->
+     <!-- Transition -->
+    <!-- Programming -->
+     <!-- Json Reader -->
+     <!-- Animation FSM -->
+     <!-- Infinite Circulation -->
+     <!-- Animation Demo -->
+      
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer_icons">
+      <a href="https://github.com/yourusername" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+      <a href="https://www.artstation.com/jackypan5" target="_blank"><img src="assets/artstation.png" alt="ArtStation" /></a>
+      <a href="https://www.linkedin.com/in/jacky-pan-65756430a/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:muyansang233@gmail.com"><img src="assets/mail.png" alt="Email" /></a>
+    </div>
+    <p class="footer_text" data-i18n="footer.copyright"></p>
+  </footer>
+
+  <!-- Language Menu -->
+  <div class="language_menu hidden" id="language_menu">
+    <div class="language_menu_inner">
+      <div class="language_list">
+        <ul>
+          <li class="language_item selected" data-lang="english" data-i18n="language_menu.english"></li>
+          <li class="language_item" data-lang="chinese" data-i18n="language_menu.chinese"></li>
+          <li class="language_item" data-lang="cantonese" data-i18n="language_menu.cantonese"></li>
+        </ul>
+      </div>
+      <div class="selected_list">
+        <ul>
+          <li class="english_selected" id="english_selected">✓</li>
+          <li class="chinese_selected hidden_text" id="chinese_selected">✓</li>
+          <li class="cantonese_selected hidden_text" id="cantonese_selected">✓</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/language.js"></script>
+</body>
+</html>

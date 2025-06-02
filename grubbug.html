@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacky Pan</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/aboutme.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav_bar">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+      <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+      <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
+      <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+    </div>
+    <div class="language">
+      <button class="language_button" id="language_button">
+        <img src="assets/language.png" alt="language" class="language_icon">
+      </button>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer_icons">
+      <a href="https://github.com/yourusername" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+      <a href="https://www.artstation.com/jackypan5" target="_blank"><img src="assets/artstation.png" alt="ArtStation" /></a>
+      <a href="https://www.linkedin.com/in/jacky-pan-65756430a/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:muyansang233@gmail.com"><img src="assets/mail.png" alt="Email" /></a>
+    </div>
+    <p class="footer_text" data-i18n="footer.copyright"></p>
+  </footer>
+
+  <!-- Language Menu -->
+  <div class="language_menu hidden" id="language_menu">
+    <div class="language_menu_inner">
+      <div class="language_list">
+        <ul>
+          <li class="language_item selected" data-lang="english" data-i18n="language_menu.english"></li>
+          <li class="language_item" data-lang="chinese" data-i18n="language_menu.chinese"></li>
+          <li class="language_item" data-lang="cantonese" data-i18n="language_menu.cantonese"></li>
+        </ul>
+      </div>
+      <div class="selected_list">
+        <ul>
+          <li class="english_selected" id="english_selected">✓</li>
+          <li class="chinese_selected hidden_text" id="chinese_selected">✓</li>
+          <li class="cantonese_selected hidden_text" id="cantonese_selected">✓</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/language.js"></script>
+</body>
+</html>

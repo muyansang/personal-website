@@ -16,7 +16,7 @@
         "button": "View More"
         },
         "card_2": {
-        "title": "Toymare",
+        "title": "Grub Bug",
         "genre": "Genre: Action + Puzzle",
         "description": "A 3D horror game where you play as a child who has to escape from a haunted toy factory.",
         "button": "View More"
@@ -36,5 +36,49 @@
         "english": "English",
         "chinese": "简体中文",
         "cantonese": "繁体中文"
+    },
+    
+    "game1": {
+        "info": {
+            "title": "Info",
+            "role": {
+                "label": "Role:",
+                "value": "Programmer, UI/UX Lead, Game Designer, Project"
+            },
+            "engine": {
+                "label": "Engine/Framework:",
+                "value": "IntelliJ, Git, LibGDX (Java)"
+            },
+            "team": {
+                "label": "Team:",
+                "value": "Fachoi Studio — SP25 INFO/CS 3152 Intro to Game"
+            },
+            "timeline": {
+                "label": "Timeline:",
+                "value": "Jan 21 2025 - May 17th 2025"
+            }
+        },
+        "intro" : {
+            "title": "The Game",
+            "text": "I'm a curious d learning. I'm passionate about creating gamesfeature. I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature unique mechanics that push players to adapt and think creatively."
+        },
+        "game_design" : {
+            "title": "Game Design",
+            "design_goals": "Design Goals",
+            "card1": {
+                "title": "Unique Mechanics",
+                "text": "The game features a unique mechanic where players must use their environment to solve puzzles and escape from the haunted factory. This mechanic encourages players to think creatively and adapt to their surroundings."
+            },
+            "card2": {
+                "title": "Immersive Experience",
+                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
+            }, 
+            "card3": {
+                "title": "Player Engagement",
+                "text": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+            },
+            "game_mechanics": "Game Mechanics"
+        }
     }
+
 }

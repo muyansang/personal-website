@@ -24,13 +24,15 @@
 
 .header {
     display: flex;
-    background: linear-gradient(to bottom, #000000, #0000),#ff5a4e;
+    position: fixed;
+    background: linear-gradient(to bottom, #000000, #0000);
     justify-content: space-between; /* 左中右对齐 */
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-
+    z-index: 1000;
     padding-right: 40px;
+    height: 150px;
 }
 
 .style_bar{
@@ -49,14 +51,14 @@
 
 
 .nav_bar{
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
 p.impact_font,
 button.nav_text {
     font-family: 'impact';
-    font-size: 20px;
+    font-size: 25px;
     color: #fef8d0;
     text-align: center;
 }
@@ -89,7 +91,7 @@ button.nav_bar_button {
 button.nav_bar_button::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     margin-top: 10px;
     left: 0;
     width: 0%;
@@ -105,7 +107,7 @@ button.nav_bar_button:hover::after {
 
 /* 处理所有图片相关的 */
 .logo {
-    margin-top: 10px;
+    margin-top: 20px;
     height: 90px;
     width: auto;
     margin-left: 20px;
@@ -113,7 +115,8 @@ button.nav_bar_button:hover::after {
 
 .splash {
     margin: 10px;
-    height: 500px;
+    margin-top: 150px;
+    height: 400px;
     width: auto;
 }   
 
@@ -192,10 +195,11 @@ p.scrolling_text {
     align-items: center;
     display: flex;
     justify-content: flex-end;
+    z-index: 10001;
 }
 
 .language_icon {
-    max-width: 30px;
+    max-width: 40px;
     height: auto;
 }
 
@@ -204,7 +208,7 @@ p.scrolling_text {
     border: none;
     padding: 0px 0px;
     margin: 0px 0px;
-    width: 10px;
+    width: 20px;
     display: inline-block;
     cursor: pointer;
 }
@@ -212,14 +216,14 @@ p.scrolling_text {
 /* Language Selected Menu */
 
 .language_menu {
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    top: 110px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 10px;
-    width: 240px;
-    height: 120px;
+    width: 320px;
+    height: 160px;
     margin-right: 10px;
 }
 
@@ -239,6 +243,7 @@ p.scrolling_text {
 .language_list li,
 .selected_list li{
     list-style-type: none;
+    font-size: 20px;
     padding: 5px;
     display: flex;
     align-items: flex-end; /* ✅ 把所有 ✓ 右对齐 */
@@ -268,8 +273,8 @@ li.selected {
     position: absolute;
     display: flex;
     flex-direction: row;
+    right: 20px;
     top: -10px;
-    right: 17px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;

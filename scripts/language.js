@@ -1,15 +1,18 @@
 // Description: 语言切换脚本 --------------------------------------------------------------------------------------------------------------------------------------------
 $(document).ready(function () {
-  const defaultLang = "english";
   const langMap = {
     english: "text/en.json",
     chinese: "text/cn.json",
     cantonese: "text/tw.json"
   };
 
-  // 初始化语言
-  updateLanguageUI(defaultLang);
-  loadLanguage(defaultLang);
+  // ✅ 获取 localStorage 中存储的语言（如果没有就用默认）
+  const storedLang = localStorage.getItem("selectedLanguage") || "english";
+
+  // ✅ 初始化语言
+  updateLanguageUI(storedLang);
+  loadLanguage(storedLang);
+
 
   // 点击语言按钮展开/收起菜单
   $("#language_button").click(function () {
@@ -22,7 +25,9 @@ $(document).ready(function () {
   // 点击语言项切换语言
   $(".language_item").click(function () {
     const lang = $(this).data("lang");
-    updateLanguageUI(lang);
+    localStorage.setItem("selectedLanguage", lang); 
+
+    updateLanguageUI(lang);  
     loadLanguage(lang);
 
     const $menu = $("#language_menu");
@@ -30,6 +35,7 @@ $(document).ready(function () {
       $menu.removeClass("active");
     });
   });
+
 
   // 切换语言 UI 状态（选中、高亮、打钩）
   function updateLanguageUI(lang) {
@@ -44,6 +50,7 @@ $(document).ready(function () {
       }
     });
   }
+
 
   // 加载 JSON 文件并更新页面文字
   function loadLanguage(langKey) {
@@ -112,4 +119,4 @@ $("#contact_button").click(function () {
 
 // Description: Scroll Session --------------------------------------------------------------------------------------------------------------------------------------------
 
-// Language switcher --------------------------------------------------------------------------------------------------------------------------------------------------
+// Game Specific --------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,115 @@
+/* Display screen css */
+.display_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.display {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 虚化遮罩层 */
+.display_layover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; /* 虚化高度可调整 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  pointer-events: none; /* 不阻止鼠标操作视频 */
+  z-index: 2;
+}
+
+
+/* Introductory Info CSS */
+.info,
+.intro,
+.game_design {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+
+.title h1{
+    font-size: 50px;
+    color: #ff5a4e;
+}
+
+.title {
+    display: flex;
+    align-items:flex-start !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info p,
+.intro_content p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.info_text {
+    font-weight: light;
+}
+
+/* Introduction Description CSS */
+.intro_content {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_box,
+.right_box {          
+  width: 50%;
+}
+
+.right_box {
+    text-align: right;
+}
+
+.intro_image {
+    max-width: 500px;
+}
+
+/* Game Design Card */
+
+.game_design_cards {
+    background-color: #ff5a4e;
+    border-radius: 20px;
+    width: 33%;
+    aspect-ratio: 4/3;
+    padding: 20px;
+
+}
+
+.game_design_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.game_design_text {
+    color: #fffcec;
+    font-weight: light;
+}
+
+.game_design_subtitle {
+    color: #fffcec;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section_title {
+    font-size: 40px;
+    color: #736357;
+    margin-bottom: 15px;
+}

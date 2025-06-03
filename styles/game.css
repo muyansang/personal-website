@@ -27,7 +27,8 @@
 /* Introductory Info CSS */
 .info,
 .intro,
-.game_design {
+.game_design,
+.programming {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -112,4 +113,14 @@
     font-size: 40px;
     color: #736357;
     margin-bottom: 15px;
+}
+
+.language-java {
+    border-radius: 20px;
+    height: 400px;
+    width: auto;
+    text-align: left;
+  display: block;
+  white-space: pre-wrap;    /* 可选：自动换行 */
+  word-break: break-word;   /* 可选：避免超宽 */
 }

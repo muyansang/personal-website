@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/aboutme.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/game.css">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
 </head>
 <body>
   <!-- Header -->
@@ -106,6 +107,58 @@
      <!-- Level Selection -->
      <!-- Transition -->
     <!-- Programming -->
+    <div class="programming">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.game_design.title"></h1>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game1.game_design.game_mechanics"></h1>
+            </div>
+        
+            <div class = "code">
+                <pre><code class="language-java">
+    // JSon File Parser
+    private void extract() {
+        JsonValue jsonDataOut = levelInfo.get("layers");
+        for (int j = 0; j < jsonDataOut.size; j++) {
+            JsonValue groupLayer = jsonDataOut.get(j);
+
+            // 如果是 group 类型才处理内部 layers
+            if (!groupLayer.getString("type").equals("group"))
+                continue;
+
+            JsonValue innerLayers = groupLayer.get("layers");
+
+            for (int i = 0; i < innerLayers.size; i++) {
+                JsonValue layer = innerLayers.get(i);
+                String type = layer.getString("class");
+
+                if (type.equals("background")) {
+                    backgroundDrawQueue.add(layer.get("data").asIntArray());
+                } else if (type.equals("obstacle")) {
+                    obstaclesMap = layer.get("data").asIntArray();
+                } else if (type.equals("SpawnPoint")) {
+                    for (int m = 0; m < layer.get("objects").size; m++) {
+                        float x = layer.get("objects").get(m).getFloat("x");
+                        float y = layer.get("objects").get(m).getFloat("y");
+                        if (layer.getString("name").equals("player")) {
+                            playerSpawnPoint = new Vector2(x, y);
+                        } else {
+                            EnemiesSpawnPoint.add(new Vector2(x, y));
+                        }
+                    }
+                } else if (type.equals("foreground")) {
+                    foregroundDrawQueue.add(layer.get("data").asIntArray());
+                }
+            }
+        }
+    }
+                </code></pre>
+            </div>
+        </div>
+    </div>
      <!-- Json Reader -->
      <!-- Animation FSM -->
      <!-- Infinite Circulation -->
@@ -146,5 +199,8 @@
   <!-- Scripts -->
   <script src="scripts/jquery-3.7.1.js"></script>
   <script src="scripts/language.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
 </body>
 </html>

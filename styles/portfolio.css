@@ -63,6 +63,10 @@ h1.portfolio_title {
   overflow: hidden;
 }
 
+.card:hover img.game_cover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
 
 .game_description::after {

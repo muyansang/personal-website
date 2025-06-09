@@ -31,10 +31,13 @@
 .programming {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    margin-right: 20vw;
-    margin-left: 20vw;
+    justify-content: center;
+    margin: 40px auto;            /* 上下间距 + 居中 */
+    padding: 0 5vw;               /* 左右留白，随视口变化 */
+    max-width: 1200px;            /* 限制最大宽度避免超宽 */
+    box-sizing: border-box;
 }
+
 
 .title h1{
     font-size: 50px;
@@ -120,7 +123,25 @@
     height: 400px;
     width: auto;
     text-align: left;
-  display: block;
-  white-space: pre-wrap;    /* 可选：自动换行 */
-  word-break: break-word;   /* 可选：避免超宽 */
+
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.60);
+    left: 0% !important;
+    right: 0% !important;
+}
+
+.carousel-indicators {
+    margin-bottom: 1.8rem !important;
+}
+
+@media (max-width: 690px) {
+    .game_design_content {
+        flex-direction: column;
+    }
+
+    .intro_content {
+        flex-direction: column;
+    }
 }

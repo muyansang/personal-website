@@ -78,7 +78,19 @@
                 "text": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
             },
             "game_mechanics": "Game Mechanics"
+        },
+
+        "game_mech": {
+            "title1": "Recognize and Assemble the Shape",
+            "text1": "Players must identify the anonymous shape displayed on the order board and assemble it using available enemies on the field.",
+            
+            "title2": "Color Matters",
+            "text2": "Colors play an important role. Except for pink pieces, which act as erasers, each color grants different bonus points to the final order score once completed.",
+            
+            "title3": "Made a Mistake? Use Erasers",
+            "text3": "Players can use erasers to correct misplaced pieces by throwing an eraser at the incorrect component."
         }
+
     }
 
 }

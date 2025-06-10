@@ -143,12 +143,58 @@
     <!-- Programming -->
     <div class="programming">
         <div class = "title">
-            <h1 class="impact_font" data-i18n="game1.game_design.title"></h1>
+            <h1 class="impact_font" data-i18n="game1.programming.title"></h1>
         </div>
 
         <div class = "section">
             <div class = "section_title">
-                <h2 class="impact_font section_title" data-i18n="game1.game_design.game_mechanics"></h1>
+                <h2 class="impact_font section_title" data-i18n="game1.programming.tech1.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech1.text"></p>
+            </div>
+            
+            <img src="assets/dependency.png" alt="dependency" class="info_img">
+        
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game1.programming.tech2.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech2.text"></p>
+            </div>
+            
+            <div class="img-magnifier-container">
+                <img id="myimage" src="assets/activitydiagram.png" class="info_img" alt="Girl">
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game1.programming.tech3.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech3.text"></p>
+            </div>
+            
+            <img src="assets/dependency.png" alt="dependency" class="info_img">
+        
+        </div>
+
+        
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game1.programming.tech4.title"></h1>
+            </div>
+
+            <div class="section_text_container">   
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech4.text"></p>
             </div>
         
             <div class = "code">
@@ -185,6 +231,245 @@
                     }
                 } else if (type.equals("foreground")) {
                     foregroundDrawQueue.add(layer.get("data").asIntArray());
+                }
+            }
+        }
+    }
+                </code></pre>
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game1.programming.tech5.title"></h1>
+            </div>
+
+            <div class="section_text_container">   
+                <h2 class="acumin_font section_subtitle" data-i18n="game1.programming.tech5.subtitle1"></h2>
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech5.text1"></p>
+            </div>
+        
+            <div class = "code">
+                <pre><code class="language-java">
+    public enum OrderState{
+        INCOMPLETE,
+        ANIMATION_COMPLETE,
+        FLYING_OUT,        
+        FALLING_IN,
+        COMPLETE,
+        ORDER_FLYING_COMPLETE,
+        FLIPPING_COMPLETE,
+        SWAPPING
+    }
+
+    //...
+
+    private void updateAnimation(float dt) {
+        switch (state) {
+            // CASE when the toy has done flying to the player
+            case ORDER_FLYING_COMPLETE:
+                flipping = true;
+                flipTimer = 0f;
+                flippedToComplete = false;
+                state = OrderState.FLIPPING_COMPLETE;
+                break;
+
+            // CASE when the Anonymouse order has flipped and reveal to the corresponding toy
+            case FLIPPING_COMPLETE:
+                if (flipping) {
+                    flipTimer += dt;
+                    if (flipTimer >= FLIP_DURATION) {
+                        flipping = false;
+                        flipTimer = 0f;
+                        finishedFlipping = true;
+                        flipWaitTimer = 0f;
+                    }
+                } else if (finishedFlipping) {
+                    flipWaitTimer += dt;
+                    if (flipWaitTimer >= FLIP_WAIT_DURATION) {
+                        finishedFlipping = false;
+                        state = OrderState.FLYING_OUT;
+                    }
+                }
+                break;
+
+            // CASE when the order board swing up
+            case FLYING_OUT:
+                if (!obOut.isPlaying()){
+                    obOut.play();
+                }
+                System.out.println("FLYING OUT");
+                animationTimer += dt;
+                visualOffsetY = Interpolation.pow2Out.apply(0f, orderBackgroundTexture.getHeight() - 63, animationTimer / ANIMATION_DURATION);
+                if (animationTimer >= ANIMATION_DURATION) {
+                    state = OrderState.FALLING_IN;
+                    animationTimer = 0f;
+                }
+                break;
+
+            // CASE When the order swapping has completed (Action was done elsewhere)
+            case SWAPPING:
+                if (swappingOrderComplete){
+                    animationTimer = 0;
+                    this.state = OrderState.FALLING_IN;
+
+                }
+                break;
+                
+            // CASE When the order board is done updating the display with the new order and fall in
+            case FALLING_IN:
+                if (!obIn.isPlaying()){
+                    obIn.play();
+                }
+                animationTimer += dt;
+                visualOffsetY = Interpolation.swingOut.apply(orderBackgroundTexture.getHeight() + 100f, 0f, animationTimer / ANIMATION_DURATION);
+                if (animationTimer >= ANIMATION_DURATION) {
+                    state = OrderState.ANIMATION_COMPLETE;
+                    visualOffsetY = 0f;
+                    animationTimer = 0f;
+                    taskScheduled = false;
+                    resetForNewOrder();
+                }
+                break;
+
+            default:
+                visualOffsetY = 0f;
+        }
+    }
+                </code></pre>
+            </div>
+
+            <div class="section_text_container">   
+                <h2 class="acumin_font section_subtitle" data-i18n="game1.programming.tech5.subtitle2"></h2>
+                <p class="acumin_font section_text" data-i18n="game1.programming.tech5.text2"></p>
+            </div>
+
+            <div class = "code">
+                <pre><code class="language-java">
+    // ...
+    // Field attributes controlling the animation; 
+    private boolean shakeDone = false;
+    private float shakeTimer = 0f;
+
+    private boolean shrinkInDone = false ;
+    private float shrinkInTimer = 0f;
+
+    private boolean shrinkOutDone = false ;
+    private float shrinkOutTimer = 0f;
+    
+    private boolean bounceBackDone = false;
+    private float bounceBackTimer = 0f;
+    //...
+
+    public void draw(SpriteBatch batch) {
+
+        // CASE when this combine toy is a combined shape but does not form an order from order board
+        if (!completed) {
+            drawCombined(batch);
+
+        // CASE when this combine toy matched the order
+        } else {
+            float shakeDuration = 0.3f;
+            float shrinkInDuration = 0.15f;
+            float shrinkOutDuration = 0.15f;
+            float bounceDuration = 0.3f;
+
+            Vector2 center = this.getPosition();
+
+            // CASE to process shaking animation
+            if (!shakeDone) {
+                shakeTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shakeTimer / shakeDuration, 1f);
+                float offsetX = (float)(Math.sin(progress * 25f) * 5f);
+                float offsetY = (float)(Math.cos(progress * 10f) * 5f);
+
+                for (Toy component : components) {
+                    Vector2 pos = component.getPosition().cpy().add(offsetX, offsetY);
+                    Texture tex = component.getCurrentTexture();
+                    float width = tex.getWidth();
+                    float height = tex.getHeight();
+                    batch.draw(tex, pos.x - width / 2f, pos.y - height / 2f, width, height);
+                }
+
+                if (progress >= 1f) {
+                    // Done Shaking, access key to this block will be denied
+                    shakeDone = true;
+                    shrinkInTimer = 0f;
+                }
+
+            // CASE to process shrink-in animation
+            } else if (!shrinkInDone) {
+                shrinkInTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shrinkInTimer / shrinkInDuration, 1f);
+
+                for (Toy component : components) {
+                    Vector2 pos = component.getPosition();
+                    Texture tex = component.getCurrentTexture();
+                    Vector2 shrinkPos = pos.cpy().lerp(center, progress);
+                    float scale = 1.0f * (1 - progress);
+
+                    float width = tex.getWidth() * scale * 1.5f;
+                    float height = tex.getHeight() * scale * 1.5f;
+
+                    batch.draw(tex, shrinkPos.x - width / 2f, shrinkPos.y - height / 2f, width, height);
+                }
+
+                if (progress >= 1f) {
+                    shrinkInDone = true;
+                    shrinkOutTimer = 0f;
+                }
+
+            // CASE to process shrink-out animation
+            } else if (!shrinkOutDone) {
+                Music bling = FontManager.getBling();
+                bling.setVolume(0.35f);
+                if (!bling.isPlaying()){
+                    bling.play();
+                }
+                shrinkOutTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shrinkOutTimer / shrinkOutDuration, 1f);
+
+                float scale = 0.2f + 1.0f * progress; // 0.2 → 1.2
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth() * scale;
+                    float height = completeShapeTexture.getHeight() * scale;
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width * 1.5f, height * 1.5f);
+                }
+
+                if (progress >= 1f) {
+                    shrinkOutDone = true;
+                    bounceBackTimer = 0f;
+                }
+
+            // CASE to perform bounce back animation
+            } else if (!bounceBackDone) {
+                bounceBackTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(bounceBackTimer / bounceDuration, 1f);
+
+                float scale = 1.2f - 0.2f * progress; // 1.2 → 1.0
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth() * scale;
+                    float height = completeShapeTexture.getHeight() * scale;
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width * 1.5f, height * 1.5f);
+                }
+
+                if (progress >= 1f) {
+                    bounceBackDone = true;
+                    animationComplete = true;
+
+                    if (!shrinkToScreenCaptured) {
+                        Vector3 screenPos3 = camera.project(new Vector3(getPosition(), 0));
+                        screenFreezePosition = new Vector2(screenPos3.x, screenPos3.y);
+                        shrinkToScreenCaptured = true;
+                    }
+                }
+
+            // CASE When animation has been completed, draw normally
+            } else {
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth();
+                    float height = completeShapeTexture.getHeight();
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width, height);
                 }
             }
         }

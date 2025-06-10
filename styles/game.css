@@ -111,12 +111,7 @@
     margin-bottom: 15px;
     text-align: center;
 }
-
-.section_title {
-    font-size: 40px;
-    color: #736357;
-    margin-bottom: 15px;
-}
+/* Programming Section */
 
 .language-java {
     border-radius: 20px;
@@ -136,6 +131,12 @@
     margin-bottom: 1.8rem !important;
 }
 
+/* 处理图片 */
+.info_img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 690px) {
     .game_design_content {
         flex-direction: column;
@@ -144,4 +145,35 @@
     .intro_content {
         flex-direction: column;
     }
+}
+
+.language-java {
+    height: 600px;
+}
+
+/* Section */
+.section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section_title {
+    font-size: 40px;
+    color: #736357;
+    margin-bottom: 15px;
+}
+
+.section_text_container {
+    width: 100%;
+}
+
+.section_text {
+    font-weight: light;
+    font-size: 20px;
+}
+
+.section_subtitle {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bolder;
 }

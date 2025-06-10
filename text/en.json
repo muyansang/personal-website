@@ -89,6 +89,32 @@
             
             "title3": "Made a Mistake? Use Erasers",
             "text3": "Players can use erasers to correct misplaced pieces by throwing an eraser at the incorrect component."
+        },"programming" : {
+            "title": "Programming",
+            "tech1": {
+                "title": "Dependency Diagram",
+                "text": "The game features a unique mechanic where players must use their environment to solve puzzles and escape from the haunted factory. This mechanic encourages players to think creatively and adapt to their surroundings."
+            },
+            "tech2": {
+                "title": "Activity Diagram",
+                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
+            }, 
+            "tech3": {
+                "title": "Memory Management",
+                "text": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+            },
+            "tech4": {
+                "title": "Tiled JSON Parsing",
+                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
+            }, 
+            "tech5": {
+                "title": "Animation through FSM and Bool Chain",
+                "subtitle1": "Order Update Animation with FSM",
+                "subtitle2": "Toy Complete Animation with Bool Chain",
+                "text1": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress.",
+                "text2": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+            },
+            "game_mechanics": "Game Mechanics"
         }
 
     }

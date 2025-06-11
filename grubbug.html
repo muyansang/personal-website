@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="styles/portfolio.css">
   <link rel="stylesheet" href="styles/aboutme.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
 </head>
 <body>
   <!-- Header -->
@@ -26,6 +29,93 @@
       </button>
     </div>
   </header>
+  <!-- The Game -->
+    <div class="intro">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.intro.title"></h1>
+        </div>
+        <div class="intro_content">
+            <div class = "left_box">
+                <p><span class = "info_text acumin_font" data-i18n="game1.intro.text"></span></p>
+            </div>
+            <div class = "right_box">
+                <img src="assets/toymare.png" alt="language" class="intro_image">
+            </div>
+        </div>  
+    </div>
+    <!-- Game Design -->
+    <div class="game_design">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game1.game_design.title"></h1>
+        </div>
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game1.game_design.design_goals"></h1>
+        </div>
+    
+        <div class = "game_design_content">
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card1.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card1.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card2.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card2.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game1.game_design.card3.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game1.game_design.card3.text"></span></p> 
+            </div>
+        </div>
+    </div>
+   <!-- Game Mechanism -->
+<div class="game_design">
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game1.game_design.game_mechanics"></h1>
+        </div>
+    
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video src="videos/mech_1.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game1.game_mech.title1"></h5>
+                    <p data-i18n="game1.game_mech.text1"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video src="videos/mech_2.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game1.game_mech.title2"></h5>
+                    <p data-i18n="game1.game_mech.text2"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video src="videos/mech_3.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game1.game_mech.title3"></h5>
+                    <p data-i18n="game1.game_mech.text3"></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+  <!-- Character Design -->
+   <!-- Animation -->
 
   <!-- Footer -->
   <footer class="footer" id="footer">
@@ -59,7 +149,14 @@
   </div>
 
   <!-- Scripts -->
-  <script src="scripts/jquery-3.7.1.js"></script>
-  <script src="scripts/language.js"></script>
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/language.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

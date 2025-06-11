@@ -6,7 +6,7 @@
         "artstation": "ARTSTATION",
         "contact": "CONTACT"
     },
-    "style_bar_text": "I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature unique mechanics that push players to adapt and think creatively.",
+    "style_bar_text": "I'm a curious and ambitious game developer driven to create games that are not only fun through their mechanics but also grounded in meaningful themes—whether narrative, cultural, historical, or emotional. While I’m still early in my journey, I’m committed to learning every aspect of game development step by step, with the goal of one day building something truly impactful to me, player community or the world.",
     "portfolio": {
         "title": "PORTFOLIO",
         "card_1": {
@@ -24,10 +24,10 @@
     },
     "about": {
         "title": "ABOUT ME",
-        "p1": "Hi, I'm Andy! I'm 20 and I'm currently a senior student at Cornell University. I'm majoring in Computer Science with a minor in Game Design. I have been programming for over 6 years and have experience in making games for over 3 years.",
-        "p2": "Since I was a kid, I've always had three big goals on my bucket list: to make a positive impact on my community, to travel and learn about the diverse cultures of our planet, and to live a happy life.",
-        "p3": "While I might not be the best judge of how much impact I've made, I can confidently say that I'm living a happy life, thanks to the incredible people I've met and the perspectives I've gained from traveling the world. It may not seem like much, but I'm deeply grateful for everything I have.",
-        "p4": "When I'm not working on my next project, I love taking time off to be with friends and family. I also enjoy indulging in activities like tennis, skiing, cooking, watching movies, listening to music, and, of course, gaming."
+        "p1": "Hi! I’m Jacky, a 21-year-old rising junior majoring in Information Science at Cornell University. I’m deeply passionate about interactive technology, especially game design, which I’m pursuing as a minor. I bring six years of experience in art and design, two years in programming, and one year specifically focused on game development.",
+        "p2": "For a long time, I was uncertain about my career path. I wasn’t sure what kind of impact I wanted to make—whether it was educational, emotional, or simply bringing joy to others. Over time, I’ve come to realize that video games, often called the ninth art, are a powerful medium that blends diverse disciplines to convey meaningful experiences. This realization gave me purpose.",
+        "p3": "Interestingly, I used to dislike programming—my early struggles with Scratch shook my confidence. But through game development, I found the motivation to overcome those fears and embrace coding as a creative tool. I will tirelessly keep learning new skills and technologies to help me go further on my path as a game developer.",
+        "p4": "Outside of academics and projects, I love playing games, traveling, and cooking. Traveling, in particular, inspires me. It exposes me to different cultures and perspectives, often sparking ideas for my design and game projects."
     },
     "footer": {
         "copyright": "Copyright © 2024, Jacky Pan. All rights reserved."
@@ -60,22 +60,36 @@
         },
         "intro" : {
             "title": "The Game",
-            "text": "I'm a curious d learning. I'm passionate about creating gamesfeature. I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature I'm a curious developer who thrives on taking on new challenges and constantly learning. I'm passionate about creating games that are not only fun to play but also feature unique mechanics that push players to adapt and think creatively."
+            "text": "In a busy delivery warehouse, Nox the delivery cat was sorting packages as usual—until a strange energy swept through, bringing every parcel to life. Now, chaotic creatures are wreaking havoc, and it’s up to Nox to stop them! As Nox, the diligent delivery cat, players must fend off the rebellious parcels by quickly assembling and combining scattered toy parts to form powerful constructs. Use strategy, timing, and quick thinking to restore order to the warehouse and ensure every package gets delivered on time."
         },
         "game_design" : {
             "title": "Game Design",
             "design_goals": "Design Goals",
             "card1": {
-                "title": "Unique Mechanics",
-                "text": "The game features a unique mechanic where players must use their environment to solve puzzles and escape from the haunted factory. This mechanic encourages players to think creatively and adapt to their surroundings."
+                "title": "Sense of Accomplishment",
+                "text": "For each order completed, we wish that player can feel sense of accomplishment by either revealing a new toy and enjoy the moment when the score grows exponentially."
             },
             "card2": {
-                "title": "Immersive Experience",
-                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
-            }, 
+            "title": "Non-trivial Solution",
+            "text": "Players can build deceptive toy orders in multiple ways by recognizing their structure. A goose-like shape, for example, may be completed from the head, feet, or sides—allowing for flexible strategies and creative problem-solving."
+            },
             "card3": {
-                "title": "Player Engagement",
+                "title": "Speed and Skills",
                 "text": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+            },
+            "game_mechanics": "Game Mechanics"
+        }, "game_ui" : {
+            "ui1": {
+                "title": "Menu Screen",
+                "text": "The design principle of the menu screen aimed to create a lighthearted and cute vibe through a animated illustration. The animation is achieved through programming by changing the offsets of the UI elements with a osillation constant derived through sin/cos."
+            },
+            "ui2": {
+                "title": "Transition",
+                "text": "Since the background story is about delivery and package, delivery box opening/closing is a creative and interesting ways of transitiong between the screen. This also align with UI button in Level Selection which also is a delivery box."
+            }, 
+            "ui3": {
+                "title": "Level Selection",
+                "text": "Level selection page have a green/summer and a winter theme, this corresponded to different chapters, theme music represented in our game level. I designed it in a map scroller to invite players into the journey of Nox"
             },
             "game_mechanics": "Game Mechanics"
         },
@@ -93,30 +107,29 @@
             "title": "Programming",
             "tech1": {
                 "title": "Dependency Diagram",
-                "text": "The game features a unique mechanic where players must use their environment to solve puzzles and escape from the haunted factory. This mechanic encourages players to think creatively and adapt to their surroundings."
+                "text": "The architecture of Toymare strictly follows the Model-View-Control (MVC) practice in Software Engineering. We define all objects in the 'Model' section and resolve interactions between models in the 'Control' section."
             },
             "tech2": {
                 "title": "Activity Diagram",
-                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
+                "text": "The Activity Diagram displays the resonale of our main Control classes, which is Game Scene and Gameplay Controller."
             }, 
             "tech3": {
                 "title": "Memory Management",
-                "text": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+                "text": "Toymare utilize a built-in class and repertoire of resource managing using AssestsDirectory. All textures was initialized in the screen before each screen, and passed to the constructor of the next screen and the next screen will read from this assetsDirectory. All screens directory will correspondingly disposed when players exit the screen. This practice effectively optimize number of textures loaded at once and memory management when the game runs."
             },
             "tech4": {
                 "title": "Tiled JSON Parsing",
-                "text": "The game is designed to provide an immersive experience, with a focus on atmosphere and storytelling. Players will feel the tension and fear as they navigate through the haunted factory."
+                "text": "Tiled is an APP designed for level designs and map design for 2D games using tilesets. In Tiled, our grid is defined by 45 * 23 cells, we will be able to mark which cell are special blocks (obstacles, spawnpoints and mud). We transpose the level design in Tiled by the JSON file Tiled had provided to us. The function below extracts essential information from the Json and stored as a field in GameScene Class."
             }, 
             "tech5": {
                 "title": "Animation through FSM and Bool Chain",
                 "subtitle1": "Order Update Animation with FSM",
                 "subtitle2": "Toy Complete Animation with Bool Chain",
-                "text1": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress.",
-                "text2": "The game is designed to keep players engaged with its challenging puzzles and unique mechanics. Players will need to think critically and adapt to the game's challenges to progress."
+                "text1": "This code implements a finite state machine (FSM) to manage the animation flow of an in-game 'order' object. The OrderState enum defines discrete animation states and the updateAnimation(float dt) method transitions between them based on timers, flags, and conditions. Each state encapsulates specific animation logic, such as flipping, playing sound effects, or applying interpolated visual offsets. This FSM approach ensures clear, modular control over complex sequential animations, enabling smooth and predictable state transitions in the UI or gameplay.",
+                "text2": "This draw(SpriteBatch batch) method implements a sequential keyframe animation system using manual state flags and timers, simulating a mini finite state machine (FSM) for animating a 'combined toy' object. The animation progresses through four stages—shake, shrink-in, shrink-out, and bounce-back—each governed by its own timer and completion flag (shakeDone, shrinkInDone, etc.). The logic ensures smooth transitions through visual effects such as jittering, shrinking toward the center, expanding with sound feedback, and finally a bounce-back to resting scale. This fine-grained control enables expressive, multi-phase feedback upon toy combination, enhancing game feel and user satisfaction."
             },
             "game_mechanics": "Game Mechanics"
         }
 
     }
-
 }

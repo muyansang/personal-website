@@ -23,6 +23,10 @@
   z-index: 2;
 }
 
+.ui_wrapper h2 {
+    font-weight: bolder;
+}
+
 
 /* Introductory Info CSS */
 .info,
@@ -155,12 +159,25 @@
     .left_box,
     .right_box {          
     width: 100%;
+    padding-top: 0;
     }
 
     .intro_content {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .ui_wrapper {
+        flex-direction: column !important;
+    }
+
+    .ui_video {
+        width: 100% !important;
+    }
+
+   .right_box {
+        text-align: center;
     }
 }
 

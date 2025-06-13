@@ -37,10 +37,12 @@
 
 .style_bar{
     gap: 20px;
+    height: 1000px;
     background-color: #ff5a4e;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .header,
@@ -71,6 +73,17 @@ p.acumin_font {
     font-size: 20px;
     color: #fef8d0;
     text-align: center;
+}
+
+.style_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 /* 处理Button的hover*/
@@ -115,14 +128,13 @@ button.nav_bar_button:hover::after {
 
 .splash {
     margin: 10px;
-    margin-top: 150px;
     height: 400px;
     width: auto;
 }   
 
 /* 处理intro 文字 */
 .style_bar_text {
-  max-width: 700px;     
+  max-width: 900px;     
   width: 100%;
   margin-bottom: 20px;          
   text-align: center;   
@@ -221,7 +233,7 @@ p.scrolling_text {
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    padding: 10px;
+    padding-right: 10px;
     width: 320px;
     height: 160px;
     margin-right: 10px;
@@ -248,11 +260,11 @@ p.scrolling_text {
     padding: 5px;
     display: flex;
     align-items: flex-end; /* ✅ 把所有 ✓ 右对齐 */
-    align-items: center;
 }
 
 .language_list {
     width: 50%;
+    text-align: left !important;
 }
 
 
@@ -281,10 +293,13 @@ li.selected {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+
 }
 
 .language_list ul,
 .selected_list ul {
+    margin-top: 15px;
+    margin-left: -10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

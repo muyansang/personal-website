@@ -21,8 +21,9 @@
 .personal_pic {
     display: flex;
     max-width: 500px;
+    width: 100%;
     height: auto;
-    border-radius: 40px;
+    border-radius: 6vw;
 }
 
 .about_me_text {
@@ -60,6 +61,14 @@ h1.about_me_title {
         align-items: center;
         flex: 1;
         max-width: 500px;
-}
+    }
+
+    .personal_pic {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 6vw;
+    }
     
 }

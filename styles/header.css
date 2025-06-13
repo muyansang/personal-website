@@ -298,8 +298,7 @@ li.selected {
 
 .language_list ul,
 .selected_list ul {
-    margin-top: 15px;
-    margin-left: -10px;
+    margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

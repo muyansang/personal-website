@@ -32,7 +32,7 @@
     width: 100%;
     z-index: 1000;
     padding-right: 40px;
-    height: 150px;
+    height: 100px;
 }
 
 .style_bar{
@@ -60,7 +60,7 @@
 p.impact_font,
 button.nav_text {
     font-family: 'impact';
-    font-size: 25px;
+    font-size: 20px;
     color: #fef8d0;
     text-align: center;
 }
@@ -86,6 +86,11 @@ p.acumin_font {
     margin-left: 20px;
 }
 
+/* 处理hamburgur menu */
+.hamburger {
+    display: none;
+}
+
 /* 处理Button的hover*/
 button.nav_bar_button {
     position: relative;
@@ -93,7 +98,6 @@ button.nav_bar_button {
     border: none;
     padding: 0px 0px;
     margin: 0px 0px;
-    height: 20px;
     display: inline-block;
     cursor: pointer;
     font-family: 'impact';
@@ -104,8 +108,7 @@ button.nav_bar_button {
 button.nav_bar_button::after {
     content: "";
     position: absolute;
-    bottom: -20px;
-    margin-top: 10px;
+    bottom: -10px;
     left: 0;
     width: 0%;
     height: 2px;
@@ -120,11 +123,25 @@ button.nav_bar_button:hover::after {
 
 /* 处理所有图片相关的 */
 .logo {
-    margin-top: 20px;
     height: 90px;
     width: auto;
     margin-left: 20px;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+button.nav_bar_button,
+img.logo {
+    transition: transform 0.2s ease;
+}
+
+button.nav_bar_button:hover,
+img.logo:hover {
+    transform: scale(1.05);
+}
+
 
 .splash {
     margin: 10px;
@@ -229,7 +246,7 @@ p.scrolling_text {
 
 .language_menu {
     position: fixed;
-    top: 110px;
+    top: 90px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
@@ -326,5 +343,32 @@ li.selected {
     button.nav_bar_button {
         display: none;
     }
+
+    .nav_bar {
+        gap: 20px;
+    }
+
+    /* 处理hamburgur menu */
+    .hamburger {
+        margin-top: 10px;
+        border: none;
+        position: relative;
+        background-color: #0000;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hamburger_icon {
+        width: 35px;
+        height: auto;
+        transition: all 0.2s ease;
+    }
+
+    .hamburger_icon:hover {
+        transform: scale(1.1);
+    }
+
 
 }

@@ -321,3 +321,10 @@ li.selected {
 li.selected {
     color: #ff5a4e;
 }
+
+@media (max-width: 930px) {
+    button.nav_bar_button {
+        display: none;
+    }
+
+}

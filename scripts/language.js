@@ -43,6 +43,15 @@ $(document).ready(function () {
     }
   });
 
+  // Download
+  $("#mac").click(function() {
+      window.location.href = "downloads/Toymare-Mac.zip";
+  });
+
+  $("#windows").click(function() {
+      window.location.href = "downloads/Toymare-Windows.zip";
+  });
+
 
 
   // 点击语言按钮展开/收起菜单

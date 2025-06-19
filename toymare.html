@@ -19,10 +19,10 @@
     <div class="nav_bar">
         <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
       <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
-      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
-      <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
-      <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
-      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+        <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+        <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
+        <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+        <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
     </div>
     <div class="language">
       <button class="language_button" id="language_button">
@@ -45,10 +45,24 @@
         <div class = "title">
             <h1 class="impact_font" data-i18n="game1.info.title"></h1>
         </div>
-        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.role.label"></strong> <span class = "info_text" data-i18n="game1.info.role.value"></span></p>
-        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.engine.label"></strong> <span class = "info_text" data-i18n="game1.info.engine.value"></span></p>
-        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.team.label"></strong> <span class = "info_text" data-i18n="game1.info.team.value"></span></p>
-        <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.timeline.label"></strong> <span class = "info_text" data-i18n="game1.info.timeline.value"></span></p>
+        <div class="info_content">
+            <div class="left_box">
+                <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.role.label"></strong> <span class = "info_text" data-i18n="game1.info.role.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.engine.label"></strong> <span class = "info_text" data-i18n="game1.info.engine.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.team.label"></strong> <span class = "info_text" data-i18n="game1.info.team.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.timeline.label"></strong> <span class = "info_text" data-i18n="game1.info.timeline.value"></span></p>                
+            </div>
+
+            <div class="right_box download_box">
+                <button class="download_button">
+                    <img src="assets/mac_icon.svg" alt="mac_icon" class="download_img" id="mac">
+                </button>
+                <button class="download_button">
+                    <img src="assets/windows_icon.svg" alt="windows_icon" class="download_img" id="windows">
+                </button>
+            </div>
+
+        </div>   
     </div>
 
     <!-- The Game -->
@@ -57,12 +71,12 @@
             <h1 class="impact_font" data-i18n="game1.intro.title"></h1>
         </div>
         <div class="intro_content">
-            <div class = "left_box">
-                <p><span class = "info_text acumin_font" data-i18n="game1.intro.text"></span></p>
-            </div>
-            <div class = "right_box">
-                <img src="assets/toymare.png" alt="language" class="intro_image">
-            </div>
+                <div class = "left_box">
+                    <p><span class = "info_text acumin_font" data-i18n="game1.intro.text"></span></p>
+                </div>
+                <div class = "right_box">
+                    <img src="assets/toymare.png" alt="language" class="intro_image">
+                </div>
         </div>  
     </div>
     <!-- Game Design -->

@@ -42,6 +42,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #fffcec;
+}
+
 
 .title h1{
     font-size: 50px;
@@ -171,6 +175,16 @@
 .info_img {
     max-width: 100%;
     height: auto;
+}
+
+.bg_deco {
+    width: 1400px;
+    right: 0;
+    bottom: 0;
+    align-items: end;
+    margin-left: 12px;
+    margin-bottom: -40px;
+    margin-top: -50px;
 }
 
 @media (max-width: 690px) {

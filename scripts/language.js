@@ -53,7 +53,6 @@ $(document).ready(function () {
   });
 
 
-
   // 点击语言按钮展开/收起菜单
   $("#language_button").click(function () {
     const $menu = $("#language_menu");

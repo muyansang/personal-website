@@ -372,3 +372,72 @@ li.selected {
 
 
 }
+
+/* Drop Down Menu */
+.drop_down_menu {
+    position: fixed;
+    background-color: #ff5a4e;
+    width: 40%;
+    height: 100%;
+    z-index: 999999;
+    box-shadow: 8px 0 15px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+}
+
+.logo_red {
+    height: 90px;
+    width: auto;
+    margin: 10px;
+}
+
+.drop_down_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.drop_down_x {
+    margin-left: auto;
+    padding: 10px;
+}
+
+.drop_down_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop_down_button {
+    border: none;
+    background-color: #ff5a4e;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.drop_down_button:hover {
+    background-color: #fef8d0;
+}
+
+.drop_text {
+    font-size: 30px;
+    text-align: start;
+    color: #fef8d0;
+    transition: all 0.3s ease;
+}
+
+.drop_text:hover {
+    color: #ff5a4e;
+}
+
+.drop_down_x button {
+    font-size: 25px;
+    color: #fef8d0;
+    background-color: #0000;
+    border: none;
+    transition: all 0.2s ease;
+    margin: 20px;
+}
+
+.drop_down_x button:hover {
+    transform: scale(1.1);
+}
+

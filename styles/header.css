@@ -60,7 +60,7 @@
 p.impact_font,
 button.nav_text {
     font-family: 'impact';
-    font-size: 20px;
+    font-size: 25px;
     color: #fef8d0;
     text-align: center;
 }
@@ -98,6 +98,7 @@ button.nav_bar_button {
     border: none;
     padding: 0px 0px;
     margin: 0px 0px;
+    margin-top: 15px;
     display: inline-block;
     cursor: pointer;
     font-family: 'impact';
@@ -108,7 +109,7 @@ button.nav_bar_button {
 button.nav_bar_button::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -1px;
     left: 0;
     width: 0%;
     height: 2px;
@@ -123,7 +124,7 @@ button.nav_bar_button:hover::after {
 
 /* 处理所有图片相关的 */
 .logo {
-    height: 90px;
+    height: 100px;
     width: auto;
     margin-left: 20px;
     transition: transform 0.2s ease;
@@ -373,6 +374,13 @@ li.selected {
 
 }
 
+@media (min-width: 931px) {
+  #drop_down_menu {
+    display: none !important;
+  }
+}
+
+
 /* Drop Down Menu */
 .drop_down_menu {
     position: fixed;
@@ -380,8 +388,20 @@ li.selected {
     width: 40%;
     height: 100%;
     z-index: 999999;
+    min-width: 300px;
     box-shadow: 8px 0 15px rgba(0, 0, 0, 0.5); /* 添加阴影 */
 }
+
+#drop_down_menu {
+  position: fixed;
+  top: 0;
+  left: -100%;        /* 初始隐藏在左边 */
+  width: 40%;
+  height: 100%;
+  z-index: 1000;
+}
+
+
 
 .logo_red {
     height: 90px;
@@ -406,8 +426,10 @@ li.selected {
     flex-direction: column;
 }
 
+
 .drop_down_button {
     border: none;
+    width: 100%;
     background-color: #ff5a4e;
     padding: 20px;
     transition: all 0.3s ease;

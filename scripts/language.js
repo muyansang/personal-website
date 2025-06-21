@@ -52,6 +52,20 @@ $(document).ready(function () {
       window.location.href = "downloads/Toymare-Windows.zip";
   });
 
+  // 展开菜单（左 -> 右滑入）
+  $("#hamburger").click(function () {
+    const $menu = $("#drop_down_menu");
+    $menu.removeClass("hidden").stop(true, true).animate({ left: '0%' }, 300);
+  });
+
+  // 收起菜单（右 -> 左滑出）
+  $("#hamburger_x").click(function () {
+    const $menu = $("#drop_down_menu");
+    $menu.stop(true, true).animate({ left: '-100%' }, 300, function () {
+      $menu.addClass("hidden");
+    });
+  });
+
 
   // 点击语言按钮展开/收起菜单
   $("#language_button").click(function () {

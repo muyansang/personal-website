@@ -19,10 +19,15 @@
     <div class="nav_bar">
         <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
       <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
-        <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
-        <button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button>
+      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+    <a href="downloads/resume_rui.pdf" download="Jacky_Pan_Resume.pdf"><button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button></a>
+        <a href="https://www.artstation.com/jackypan5" target="_blank">
         <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
-        <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+        </a>
+      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+      <button class="hamburger">
+        <img src="assets/hamburger.png" class="hamburger_icon" id="hamburger">
+      </button>
     </div>
     <div class="language">
       <button class="language_button" id="language_button">
@@ -30,6 +35,26 @@
       </button>
     </div>
   </header>
+  <!-- Dropdown -->
+   <div class="drop_down_menu" id="drop_down_menu">
+        <div class="drop_down_header">
+            <img src="assets/logo.png" class="logo_red">
+            <div class="drop_down_x">
+                <button class="acumin_font" id="hamburger_x">X</button>
+            </div>
+        </div>
+
+        <div class="drop_down_content">
+            <button class="drop_down_button drop_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+            <button class="drop_down_button drop_text impact_font" id="about_button" data-i18n="nav.about"></button>
+            <a href="downloads/resume_rui.pdf" download="Jacky_Pan_Resume.pdf" ><button class="drop_down_button drop_text impact_font" id="resume_button" data-i18n="nav.resume"></button></a>
+            <a href="https://www.artstation.com/jackypan5" target="_blank">
+            <button class="drop_down_button drop_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+            </a>
+            <button class="drop_down_button drop_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+        </div>
+
+   </div>
 
     <!-- Display -->
     <div class="display_wrapper">
@@ -525,14 +550,9 @@
                 </code></pre>
             </div>
         </div>
-    <img src="assets/background_decoration.png" class="bg_deco">  
     </div>
-     <!-- Json Reader -->
-     <!-- Animation FSM -->
-     <!-- Infinite Circulation -->
-     <!-- Animation Demo -->
-           
-
+    
+    <!-- <img src="assets/background_decoration.png" class="bg_deco">  -->
   <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="footer_icons">

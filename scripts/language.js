@@ -45,8 +45,9 @@ $(document).ready(function () {
 
   // Download
   $("#mac").click(function() {
-      window.location.href = "downloads/Toymare-Mac.zip";
+      window.open("https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/toymare/", "_blank");
   });
+
 
   $("#windows").click(function() {
       window.location.href = "downloads/Toymare-Windows.zip";

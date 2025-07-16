@@ -75,7 +75,8 @@ body {
 }
 
 .download_img {
-    width: 100%;
+    max-width: 210px;
+    max-height: 70px;
 }
 
 .download_button {
@@ -93,11 +94,16 @@ body {
 }
 
 .download_box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    right: 50%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     gap: 40px;
+    z-index: 100000;
 }
 
 /* Introduction Description CSS */

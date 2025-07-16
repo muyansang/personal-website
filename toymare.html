@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Jacky Pan</title>
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="assets/icon.png" type="image/png">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/portfolio.css">
   <link rel="stylesheet" href="styles/aboutme.css">
@@ -58,11 +58,17 @@
 
     <!-- Display -->
     <div class="display_wrapper">
-    <video id="slideshowVideo" class="display" autoplay muted loop playsinline>
-        <source src="videos/video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="display_layover"></div>
+        <video id="slideshowVideo" class="display" autoplay muted loop playsinline>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="download_box">
+            <button class="download_button">
+                <img src="assets/mac_icon.png" alt="mac_icon" class="download_img" id="mac">
+            </button>
+        </div>
+        <div class="display_layover"></div>
     </div>
 
     <!-- Info -->
@@ -76,12 +82,6 @@
                 <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.engine.label"></strong> <span class = "info_text" data-i18n="game1.info.engine.value"></span></p>
                 <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.team.label"></strong> <span class = "info_text" data-i18n="game1.info.team.value"></span></p>
                 <p><strong class="info_subtitle acumin_font" data-i18n="game1.info.timeline.label"></strong> <span class = "info_text" data-i18n="game1.info.timeline.value"></span></p>                
-            </div>
-
-            <div class="right_box download_box">
-                <button class="download_button">
-                    <img src="assets/mac_icon.svg" alt="mac_icon" class="download_img" id="mac">
-                </button>
             </div>
 
         </div>   

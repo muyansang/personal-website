@@ -231,6 +231,7 @@ p.scrolling_text {
 .language_icon {
     max-width: 40px;
     height: auto;
+    transition: transform 0.2s ease-in-out;
 }
 
 .language_button {

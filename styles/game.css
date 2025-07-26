@@ -370,7 +370,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 40px; */
-    z-index: 1000;
     position: absolute;
     left: 50%;
     top: 80vw;

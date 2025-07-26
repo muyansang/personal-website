@@ -190,16 +190,21 @@
             "char2": {
                 "text": "Each plants was designed to be quirky but cute in their own way. All the animation shows the plant's small unique personality.",
                 "animation_title": "Plants' Animation",
-                "grass_idol": "Grass Idol Animation",
-                "grass_die": "Grass Dying Animation",
-                "flower_idol": "Flower Idol Animation",
-                "flower_die": "Flower Dying Animation",
-                "cactus_idol": "Cactus Idol Animation",
-                "cactus_die": "Cactus Dying Animation"
+                "grass_idol": "Grass's Idol Animation",
+                "grass_die": "Grass's Dying Animation",
+                "flower_idol": "Flower's Idol Animation",
+                "flower_die": "Flower's Dying Animation",
+                "cactus_idol": "Cactus's Idol Animation",
+                "cactus_die": "Cactus's Dying Animation",
+                "burn_die": "Dead (Over-sunbathing)",
+                "poop_die": "Dead (Over-fertilizing)"
             },
             "char3": {
-                "title": "Level Selection",
-                "text": "Level selection page have a green/summer and a winter theme, this corresponded to different chapters, theme music represented in our game level. I designed it in a map scroller to invite players into the journey of Nox"
+                "animation_title": "Cow's Animation",
+                "cow_idol": "Idol Animation",
+                "cow_poop": "Pooping Animation",
+                "cow_emo": "Depression Animation",
+                "cow_die": "Dying Animation"
             },
             "game_mechanics": "Game Mechanics"
         },

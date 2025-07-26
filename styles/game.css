@@ -95,7 +95,7 @@ body {
 
 .download_box {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     right: 50%;
     display: flex;
@@ -321,8 +321,58 @@ body {
     
 }
 
+/* Size fize */
 .mike_sing {
     max-width: 105% !important;
     height: auto;
     border-radius: 20px;
+}
+
+.cactus_die {
+    max-width: 90% !important;
+    height: auto;
+    border-radius: 20px;
+}
+
+.plant_die {
+    max-width: 35% !important;
+    height: auto;
+    border-radius: 20px;
+}
+
+.moo_logo {
+    display: flex;
+    max-height: 25vw;
+    height: auto;
+    width: auto
+}
+
+.toymare_logo {
+    display: flex;
+    max-width: 25vw;
+    width: auto;
+    height: auto;
+}
+
+.game_logo_wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; */
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -100%); /* 水平居中，底边对准中心 */
+}
+
+.game_logo_wrapper_toymare {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; */
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 80vw;
+    transform: translate(-50%, -100%); /* 水平居中，底边对准中心 */
 }

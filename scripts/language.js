@@ -44,8 +44,12 @@ $(document).ready(function () {
   });
 
   // Download
-  $("#mac").click(function() {
+  $("#toymare").click(function() {
       window.open("https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/toymare/", "_blank");
+  });
+
+  $("#moo").click(function() {
+    window.open("https://andypang1010.itch.io/e-i-e-i-moo", "_blank");
   });
 
 

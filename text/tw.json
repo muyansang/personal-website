@@ -12,7 +12,7 @@
     "card_1": {
       "title": "Toymare",
       "genre": "類型：動作 + 解謎",
-      "description": "一款 3D 恐怖遊戲，玩家扮演一名孩子，從被玩具附身的工廠中逃脫。",
+      "description": "一款快節奏拼圖動作遊戲，玩家扮演送貨貓，組裝玩具完成訂單、躲避混亂。",
       "button": "查看更多"
     },
     "card_2": {
@@ -79,6 +79,8 @@
       "game_mechanics": "遊戲機制"
     },
     "game_ui": {
+      "title": "美術設計",
+      "design_goals": "UI/UX 設計",
       "ui1": {
         "title": "選單畫面",
         "text": "選單設計以可愛輕快為核心，透過動畫插圖營造氛圍。動畫利用程式動態改變 UI 元素偏移量，採用 sin/cos 波動模擬浮動效果。"

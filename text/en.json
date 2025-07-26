@@ -12,13 +12,13 @@
         "card_1": {
         "title": "Toymare",
         "genre": "Genre: Action + Puzzle",
-        "description": "A 3D horror game where you play as a child who has to escape from a haunted toy factory.",
+        "description": "A fast-paced puzzle-action game where a delivery cat assembles toys to fulfill orders in chaos.",
         "button": "View More"
         },
         "card_2": {
-        "title": "Grub Bug",
-        "genre": "Genre: Action + Puzzle",
-        "description": "A 3D horror game where you play as a child who has to escape from a haunted toy factory.",
+        "title": "E-I-E-I-Moo",
+        "genre": "Genre: Action + Stimulation",
+        "description": "A \"cozy\" plant care and farm sim where you nurture foster plants and emotionally support your loyal cow companion.",
         "button": "View More"
         }
     },
@@ -79,6 +79,104 @@
             },
             "game_mechanics": "Game Mechanics"
         }, "game_ui" : {
+            "title": "Arts & Design",
+            "design_goals": "UI/UX Design",
+            "ui1": {
+                "title": "Menu Screen",
+                "text": "The design principle of the menu screen aimed to create a lighthearted and cute vibe through a animated illustration. The animation is achieved through programming by changing the offsets of the UI elements with a osillation constant derived through sin/cos."
+            },
+            "ui2": {
+                "title": "Transition",
+                "text": "Since the background story is about delivery and package, delivery box opening/closing is a creative and interesting ways of transitiong between the screen. This also align with UI button in Level Selection which also is a delivery box."
+            }, 
+            "ui3": {
+                "title": "Level Selection",
+                "text": "Level selection page have a green/summer and a winter theme, this corresponded to different chapters, theme music represented in our game level. I designed it in a map scroller to invite players into the journey of Nox"
+            },
+            "game_mechanics": "Game Mechanics"
+        },
+
+        "game_mech": {
+            "title1": "Recognize and Assemble the Shape",
+            "text1": "Players must identify the anonymous shape displayed on the order board and assemble it using available enemies on the field.",
+            
+            "title2": "Color Matters",
+            "text2": "Colors play an important role. Except for pink pieces, which act as erasers, each color grants different bonus points to the final order score once completed.",
+            
+            "title3": "Made a Mistake? Use Erasers",
+            "text3": "Players can use erasers to correct misplaced pieces by throwing an eraser at the incorrect component."
+        },"programming" : {
+            "title": "Programming",
+            "tech1": {
+                "title": "Dependency Diagram",
+                "text": "The architecture of Toymare strictly follows the Model-View-Control (MVC) practice in Software Engineering. We define all objects in the 'Model' section and resolve interactions between models in the 'Control' section."
+            },
+            "tech2": {
+                "title": "Activity Diagram",
+                "text": "The Activity Diagram displays the resonale of our main Control classes, which is Game Scene and Gameplay Controller."
+            }, 
+            "tech3": {
+                "title": "Memory Management",
+                "text": "Toymare utilize a built-in class and repertoire of resource managing using AssestsDirectory. All textures was initialized in the screen before each screen, and passed to the constructor of the next screen and the next screen will read from this assetsDirectory. All screens directory will correspondingly disposed when players exit the screen. This practice effectively optimize number of textures loaded at once and memory management when the game runs."
+            },
+            "tech4": {
+                "title": "Tiled JSON Parsing",
+                "text": "Tiled is an APP designed for level designs and map design for 2D games using tilesets. In Tiled, our grid is defined by 45 * 23 cells, we will be able to mark which cell are special blocks (obstacles, spawnpoints and mud). We transpose the level design in Tiled by the JSON file Tiled had provided to us. The function below extracts essential information from the Json and stored as a field in GameScene Class."
+            }, 
+            "tech5": {
+                "title": "Animation through FSM and Bool Chain",
+                "subtitle1": "Order Update Animation with FSM",
+                "subtitle2": "Toy Complete Animation with Bool Chain",
+                "text1": "This code implements a finite state machine (FSM) to manage the animation flow of an in-game 'order' object. The OrderState enum defines discrete animation states and the updateAnimation(float dt) method transitions between them based on timers, flags, and conditions. Each state encapsulates specific animation logic, such as flipping, playing sound effects, or applying interpolated visual offsets. This FSM approach ensures clear, modular control over complex sequential animations, enabling smooth and predictable state transitions in the UI or gameplay.",
+                "text2": "This draw(SpriteBatch batch) method implements a sequential keyframe animation system using manual state flags and timers, simulating a mini finite state machine (FSM) for animating a 'combined toy' object. The animation progresses through four stages—shake, shrink-in, shrink-out, and bounce-back—each governed by its own timer and completion flag (shakeDone, shrinkInDone, etc.). The logic ensures smooth transitions through visual effects such as jittering, shrinking toward the center, expanding with sound feedback, and finally a bounce-back to resting scale. This fine-grained control enables expressive, multi-phase feedback upon toy combination, enhancing game feel and user satisfaction."
+            },
+            "game_mechanics": "Game Mechanics"
+        }
+
+    },
+        "game2": {
+        "info": {
+            "title": "Info",
+            "role": {
+                "label": "Role:",
+                "value": "Game Designer, 2D Artist, 2d Animator"
+            },
+            "engine": {
+                "label": "Engine/Framework:",
+                "value": "Unity, Git"
+            },
+            "team": {
+                "label": "Team:",
+                "value": "Can't Open From This Side Studio - CiGA 2025 Game Jam"
+            },
+            "timeline": {
+                "label": "Timeline:",
+                "value": "Jun 27th 2025 - Jun 29th 2025"
+            }
+        },
+        "intro" : {
+            "title": "The Game",
+            "text": "In a world where plants have become the new pets, E-I-E-I-Moo is a cozy farm sim about caring for foster plants and your emotional cow companion. Water, fertilize, and play music to meet each plant’s unique needs, while also keeping your loyal cow happy and healthy. Your mission: help all living things thrive. Build a soothing routine and discover the quiet joy of mindful caretaking."
+        },
+        "game_design" : {
+            "title": "Game Design",
+            "design_goals": "Design Goals",
+            "card1": {
+                "title": "Race Against Time",
+                "text": "Players will have to resolve the plant's need(s) before they died beecause of it. Multiple plants will be on screen and they will have different needs at the same time, so players will have to prioritize which plant to take care of first."
+            },
+            "card2": {
+            "title": "Diversed Resolutions",
+            "text": "Each plant's needs require unique resolutions, ensuring gameplay stays fresh and non-repetitive. For example, watering and singing involve holding interactions, while sunbathing and fertilizing require placing the plant down and picking it up at the right time to avoid over-treatment."
+            },
+            "card3": {
+                "title": "More than Plants",
+                "text": "Besides keeping plants alive, players must also care for their loyal cow companion. The cow has its own needs and emotions, adding depth to the gameplay. Players must balance plant care with ensuring the cow's happiness with a Quick Time Event(QTE)."
+            },
+            "game_mechanics": "Game Mechanics"
+        }, "game_ui" : {
+            "title": "Arts & Design",
+            "design_goals": "UI/UX Design",
             "ui1": {
                 "title": "Menu Screen",
                 "text": "The design principle of the menu screen aimed to create a lighthearted and cute vibe through a animated illustration. The animation is achieved through programming by changing the offsets of the UI elements with a osillation constant derived through sin/cos."

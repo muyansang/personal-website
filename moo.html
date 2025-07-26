@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacky Pan</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/aboutme.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav_bar">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+      <button class="nav_bar_button nav_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+      <button class="nav_bar_button nav_text impact_font" id="about_button" data-i18n="nav.about"></button>
+    <a href="downloads/resume_rui.pdf" download="Jacky_Pan_Resume.pdf" class="nav_a"><button class="nav_bar_button nav_text impact_font" id="resume_button" data-i18n="nav.resume"></button></a>
+        <a href="https://www.artstation.com/jackypan5" target="_blank" class="nav_a">
+        <button class="nav_bar_button nav_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+        </a>
+      <button class="nav_bar_button nav_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+      <button class="hamburger">
+        <img src="assets/hamburger.png" class="hamburger_icon" id="hamburger">
+      </button>
+    </div>
+    <div class="language">
+      <button class="language_button" id="language_button">
+        <img src="assets/language.png" alt="language" class="language_icon">
+      </button>
+    </div>
+  </header>
+  <!-- Dropdown -->
+   <div class="drop_down_menu" id="drop_down_menu">
+        <div class="drop_down_header">
+            <img src="assets/logo.png" class="logo_red">
+            <div class="drop_down_x">
+                <button class="acumin_font" id="hamburger_x">X</button>
+            </div>
+        </div>
+
+        <div class="drop_down_content">
+            <button class="drop_down_button drop_text impact_font" id="portfolio_button" data-i18n="nav.portfolio"></button>
+            <button class="drop_down_button drop_text impact_font" id="about_button" data-i18n="nav.about"></button>
+            <a href="downloads/resume_rui.pdf" download="Jacky_Pan_Resume.pdf" ><button class="drop_down_button drop_text impact_font" id="resume_button" data-i18n="nav.resume"></button></a>
+            <a href="https://www.artstation.com/jackypan5" target="_blank">
+            <button class="drop_down_button drop_text impact_font" id="artstation_button" data-i18n="nav.artstation"></button>
+            </a>
+            <button class="drop_down_button drop_text impact_font" id="contact_button" data-i18n="nav.contact"></button>
+        </div>
+
+   </div>
+
+    <!-- Display -->
+    <div class="display_wrapper">
+        <video id="slideshowVideo" class="display" autoplay muted loop playsinline>
+            <source src="videos/moo_display.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="download_box">
+            <button class="download_button">
+                <img src="assets/mac_icon.png" alt="mac_icon" class="download_img" id="moo">
+            </button>
+        </div>
+        <div class="display_layover"></div>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game2.info.title"></h1>
+        </div>
+        <div class="info_content">
+            <div class="left_box">
+                <p><strong class="info_subtitle acumin_font" data-i18n="game2.info.role.label"></strong> <span class = "info_text" data-i18n="game2.info.role.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game2.info.engine.label"></strong> <span class = "info_text" data-i18n="game2.info.engine.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game2.info.team.label"></strong> <span class = "info_text" data-i18n="game2.info.team.value"></span></p>
+                <p><strong class="info_subtitle acumin_font" data-i18n="game2.info.timeline.label"></strong> <span class = "info_text" data-i18n="game2.info.timeline.value"></span></p>                
+            </div>
+
+        </div>   
+    </div>
+
+    <!-- The Game -->
+    <div class="intro">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game2.intro.title"></h1>
+        </div>
+        <div class="intro_content">
+                <div class = "left_box">
+                    <p><span class = "info_text acumin_font" data-i18n="game2.intro.text"></span></p>
+                </div>
+                <div class = "right_box">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/hfzt-WSN61k"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+        </div>  
+    </div>
+    <!-- Game Design -->
+    <div class="game_design">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game2.game_design.title"></h1>
+        </div>
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game2.game_design.design_goals"></h1>
+        </div>
+    
+        <div class = "game_design_content">
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game2.game_design.card1.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game2.game_design.card1.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game2.game_design.card2.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game2.game_design.card2.text"></span></p>
+            </div>
+
+            <div class = "game_design_cards">
+                <h1 class="impact_font game_design_subtitle" data-i18n="game2.game_design.card3.title"></h1>
+                <p><span class = "game_design_text acumin_font" data-i18n="game2.game_design.card3.text"></span></p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Mechanism -->
+    <div class="game_design">
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game2.game_design.game_mechanics"></h1>
+        </div>
+    
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video src="videos/mech_1.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game2.game_mech.title1"></h5>
+                    <p data-i18n="game2.game_mech.text1"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video src="videos/mech_2.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game2.game_mech.title2"></h5>
+                    <p data-i18n="game2.game_mech.text2"></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video src="videos/mech_3.mp4" class="d-block w-100" alt="..." autoplay muted loop></video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 data-i18n="game2.game_mech.title3"></h5>
+                    <p data-i18n="game2.game_mech.text3"></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+    <!-- UI/UX Design-->
+    <div class="game_design">
+         <!-- Menu screen -->
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game2.game_ui.title"></h1>
+        </div>
+        <div class = "section_title">
+            <h2 class="impact_font section_title" data-i18n="game2.game_ui.design_goals"></h1>
+        </div>
+
+     <!-- Transition -->
+        <div class="ui_wrapper">
+            <video src="videos/menu_demo.mp4" alt="menu_demo_video" autoplay loop muted class="ui_video"></video>
+            <div class="ui_textwrapper">
+                <span><h2 class="acumin_font section_text" data-i18n="game2.game_ui.ui1.title"></h2></span>
+                <span><p class="acumin_font section_text" data-i18n="game2.game_ui.ui1.text"></p></span>
+            </div>
+        </div>
+
+        <div class="ui_wrapper">
+            <video src="videos/transition_demo.mp4" alt="transition_demo_video" class="ui_video" autoplay loop muted></video>
+            <div class="ui_textwrapper">
+                <span><h2 class="acumin_font section_text" data-i18n="game2.game_ui.ui2.title"></h2></span>
+                <span><p class="acumin_font section_text" data-i18n="game2.game_ui.ui2.text"></p></span>
+            </div>
+        </div>
+
+        <div class="ui_wrapper">
+            <video src="videos/level_selection_demo.mp4" alt="transition_demo_video" class="ui_video" autoplay loop muted></video>
+            <div class="ui_textwrapper">
+                <span><h2 class="acumin_font section_text" data-i18n="game2.game_ui.ui3.title"></h2></span>
+                <span><p class="acumin_font section_text" data-i18n="game2.game_ui.ui3.text"></p></span>
+            </div>
+        </div>
+        <!-- Level Selection -->
+
+    </div>
+
+    <!-- Programming -->
+    <div class="programming">
+        <div class = "title">
+            <h1 class="impact_font" data-i18n="game2.programming.title"></h1>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game2.programming.tech1.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech1.text"></p>
+            </div>
+            
+            <img src="assets/dependency.png" alt="dependency" class="info_img">
+        
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game2.programming.tech2.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech2.text"></p>
+            </div>
+            
+            <div class="img-magnifier-container">
+                <img id="myimage" src="assets/activitydiagram.png" class="info_img" alt="Girl">
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game2.programming.tech3.title"></h1>
+            </div>
+
+            <div class="section_text_container">
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech3.text"></p>
+            </div>
+        
+        
+        </div>
+
+        
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game2.programming.tech4.title"></h1>
+            </div>
+
+            <div class="section_text_container">   
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech4.text"></p>
+            </div>
+        
+            <div class = "code">
+                <pre><code class="language-java">
+    // JSon File Parser
+    private void extract() {
+        JsonValue jsonDataOut = levelInfo.get("layers");
+        for (int j = 0; j < jsonDataOut.size; j++) {
+            JsonValue groupLayer = jsonDataOut.get(j);
+
+            // 如果是 group 类型才处理内部 layers
+            if (!groupLayer.getString("type").equals("group"))
+                continue;
+
+            JsonValue innerLayers = groupLayer.get("layers");
+
+            for (int i = 0; i < innerLayers.size; i++) {
+                JsonValue layer = innerLayers.get(i);
+                String type = layer.getString("class");
+
+                if (type.equals("background")) {
+                    backgroundDrawQueue.add(layer.get("data").asIntArray());
+                } else if (type.equals("obstacle")) {
+                    obstaclesMap = layer.get("data").asIntArray();
+                } else if (type.equals("SpawnPoint")) {
+                    for (int m = 0; m < layer.get("objects").size; m++) {
+                        float x = layer.get("objects").get(m).getFloat("x");
+                        float y = layer.get("objects").get(m).getFloat("y");
+                        if (layer.getString("name").equals("player")) {
+                            playerSpawnPoint = new Vector2(x, y);
+                        } else {
+                            EnemiesSpawnPoint.add(new Vector2(x, y));
+                        }
+                    }
+                } else if (type.equals("foreground")) {
+                    foregroundDrawQueue.add(layer.get("data").asIntArray());
+                }
+            }
+        }
+    }
+                </code></pre>
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "section_title">
+                <h2 class="impact_font section_title" data-i18n="game2.programming.tech5.title"></h1>
+            </div>
+
+            <div class="section_text_container">   
+                <h2 class="acumin_font section_subtitle" data-i18n="game2.programming.tech5.subtitle1"></h2>
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech5.text1"></p>
+            </div>
+        
+            <div class = "code">
+                <pre><code class="language-java">
+    public enum OrderState{
+        INCOMPLETE,
+        ANIMATION_COMPLETE,
+        FLYING_OUT,        
+        FALLING_IN,
+        COMPLETE,
+        ORDER_FLYING_COMPLETE,
+        FLIPPING_COMPLETE,
+        SWAPPING
+    }
+
+    //...
+
+    private void updateAnimation(float dt) {
+        switch (state) {
+            // CASE when the toy has done flying to the player
+            case ORDER_FLYING_COMPLETE:
+                flipping = true;
+                flipTimer = 0f;
+                flippedToComplete = false;
+                state = OrderState.FLIPPING_COMPLETE;
+                break;
+
+            // CASE when the Anonymouse order has flipped and reveal to the corresponding toy
+            case FLIPPING_COMPLETE:
+                if (flipping) {
+                    flipTimer += dt;
+                    if (flipTimer >= FLIP_DURATION) {
+                        flipping = false;
+                        flipTimer = 0f;
+                        finishedFlipping = true;
+                        flipWaitTimer = 0f;
+                    }
+                } else if (finishedFlipping) {
+                    flipWaitTimer += dt;
+                    if (flipWaitTimer >= FLIP_WAIT_DURATION) {
+                        finishedFlipping = false;
+                        state = OrderState.FLYING_OUT;
+                    }
+                }
+                break;
+
+            // CASE when the order board swing up
+            case FLYING_OUT:
+                if (!obOut.isPlaying()){
+                    obOut.play();
+                }
+                System.out.println("FLYING OUT");
+                animationTimer += dt;
+                visualOffsetY = Interpolation.pow2Out.apply(0f, orderBackgroundTexture.getHeight() - 63, animationTimer / ANIMATION_DURATION);
+                if (animationTimer >= ANIMATION_DURATION) {
+                    state = OrderState.FALLING_IN;
+                    animationTimer = 0f;
+                }
+                break;
+
+            // CASE When the order swapping has completed (Action was done elsewhere)
+            case SWAPPING:
+                if (swappingOrderComplete){
+                    animationTimer = 0;
+                    this.state = OrderState.FALLING_IN;
+
+                }
+                break;
+                
+            // CASE When the order board is done updating the display with the new order and fall in
+            case FALLING_IN:
+                if (!obIn.isPlaying()){
+                    obIn.play();
+                }
+                animationTimer += dt;
+                visualOffsetY = Interpolation.swingOut.apply(orderBackgroundTexture.getHeight() + 100f, 0f, animationTimer / ANIMATION_DURATION);
+                if (animationTimer >= ANIMATION_DURATION) {
+                    state = OrderState.ANIMATION_COMPLETE;
+                    visualOffsetY = 0f;
+                    animationTimer = 0f;
+                    taskScheduled = false;
+                    resetForNewOrder();
+                }
+                break;
+
+            default:
+                visualOffsetY = 0f;
+        }
+    }
+                </code></pre>
+            </div>
+
+            <div class="section_text_container">   
+                <h2 class="acumin_font section_subtitle" data-i18n="game2.programming.tech5.subtitle2"></h2>
+                <p class="acumin_font section_text" data-i18n="game2.programming.tech5.text2"></p>
+            </div>
+
+            <div class = "code">
+                <pre><code class="language-java">
+    // ...
+    // Field attributes controlling the animation; 
+    private boolean shakeDone = false;
+    private float shakeTimer = 0f;
+
+    private boolean shrinkInDone = false ;
+    private float shrinkInTimer = 0f;
+
+    private boolean shrinkOutDone = false ;
+    private float shrinkOutTimer = 0f;
+    
+    private boolean bounceBackDone = false;
+    private float bounceBackTimer = 0f;
+    //...
+
+    public void draw(SpriteBatch batch) {
+
+        // CASE when this combine toy is a combined shape but does not form an order from order board
+        if (!completed) {
+            drawCombined(batch);
+
+        // CASE when this combine toy matched the order
+        } else {
+            float shakeDuration = 0.3f;
+            float shrinkInDuration = 0.15f;
+            float shrinkOutDuration = 0.15f;
+            float bounceDuration = 0.3f;
+
+            Vector2 center = this.getPosition();
+
+            // CASE to process shaking animation
+            if (!shakeDone) {
+                shakeTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shakeTimer / shakeDuration, 1f);
+                float offsetX = (float)(Math.sin(progress * 25f) * 5f);
+                float offsetY = (float)(Math.cos(progress * 10f) * 5f);
+
+                for (Toy component : components) {
+                    Vector2 pos = component.getPosition().cpy().add(offsetX, offsetY);
+                    Texture tex = component.getCurrentTexture();
+                    float width = tex.getWidth();
+                    float height = tex.getHeight();
+                    batch.draw(tex, pos.x - width / 2f, pos.y - height / 2f, width, height);
+                }
+
+                if (progress >= 1f) {
+                    // Done Shaking, access key to this block will be denied
+                    shakeDone = true;
+                    shrinkInTimer = 0f;
+                }
+
+            // CASE to process shrink-in animation
+            } else if (!shrinkInDone) {
+                shrinkInTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shrinkInTimer / shrinkInDuration, 1f);
+
+                for (Toy component : components) {
+                    Vector2 pos = component.getPosition();
+                    Texture tex = component.getCurrentTexture();
+                    Vector2 shrinkPos = pos.cpy().lerp(center, progress);
+                    float scale = 1.0f * (1 - progress);
+
+                    float width = tex.getWidth() * scale * 1.5f;
+                    float height = tex.getHeight() * scale * 1.5f;
+
+                    batch.draw(tex, shrinkPos.x - width / 2f, shrinkPos.y - height / 2f, width, height);
+                }
+
+                if (progress >= 1f) {
+                    shrinkInDone = true;
+                    shrinkOutTimer = 0f;
+                }
+
+            // CASE to process shrink-out animation
+            } else if (!shrinkOutDone) {
+                Music bling = FontManager.getBling();
+                bling.setVolume(0.35f);
+                if (!bling.isPlaying()){
+                    bling.play();
+                }
+                shrinkOutTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(shrinkOutTimer / shrinkOutDuration, 1f);
+
+                float scale = 0.2f + 1.0f * progress; // 0.2 → 1.2
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth() * scale;
+                    float height = completeShapeTexture.getHeight() * scale;
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width * 1.5f, height * 1.5f);
+                }
+
+                if (progress >= 1f) {
+                    shrinkOutDone = true;
+                    bounceBackTimer = 0f;
+                }
+
+            // CASE to perform bounce back animation
+            } else if (!bounceBackDone) {
+                bounceBackTimer += Gdx.graphics.getDeltaTime();
+                float progress = Math.min(bounceBackTimer / bounceDuration, 1f);
+
+                float scale = 1.2f - 0.2f * progress; // 1.2 → 1.0
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth() * scale;
+                    float height = completeShapeTexture.getHeight() * scale;
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width * 1.5f, height * 1.5f);
+                }
+
+                if (progress >= 1f) {
+                    bounceBackDone = true;
+                    animationComplete = true;
+
+                    if (!shrinkToScreenCaptured) {
+                        Vector3 screenPos3 = camera.project(new Vector3(getPosition(), 0));
+                        screenFreezePosition = new Vector2(screenPos3.x, screenPos3.y);
+                        shrinkToScreenCaptured = true;
+                    }
+                }
+
+            // CASE When animation has been completed, draw normally
+            } else {
+                if (completeShapeTexture != null) {
+                    float width = completeShapeTexture.getWidth();
+                    float height = completeShapeTexture.getHeight();
+                    batch.draw(completeShapeTexture, center.x - width / 2f, center.y - height / 2f, width, height);
+                }
+            }
+        }
+    }
+                </code></pre>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <img src="assets/background_decoration.png" class="bg_deco">  -->
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer_icons">
+      <a href="https://github.com/yourusername" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+      <a href="https://www.artstation.com/jackypan5" target="_blank"><img src="assets/artstation.png" alt="ArtStation" /></a>
+      <a href="https://www.linkedin.com/in/jacky-pan-65756430a/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:muyansang233@gmail.com"><img src="assets/mail.png" alt="Email" /></a>
+    </div>
+    <p class="footer_text" data-i18n="footer.copyright"></p>
+  </footer>
+
+  <!-- Language Menu -->
+  <div class="language_menu hidden" id="language_menu">
+    <div class="language_menu_inner">
+      <div class="language_list">
+        <ul>
+          <li class="language_item selected" data-lang="english" data-i18n="language_menu.english"></li>
+          <li class="language_item" data-lang="chinese" data-i18n="language_menu.chinese"></li>
+          <li class="language_item" data-lang="cantonese" data-i18n="language_menu.cantonese"></li>
+        </ul>
+      </div>
+      <div class="selected_list">
+        <ul>
+          <li class="english_selected" id="english_selected">✓</li>
+          <li class="chinese_selected hidden_text" id="chinese_selected">✓</li>
+          <li class="cantonese_selected hidden_text" id="cantonese_selected">✓</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/language.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

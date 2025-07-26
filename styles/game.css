@@ -298,3 +298,31 @@ body {
     height: auto;
     border-radius: 20px;
 }
+
+.art_displays_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    width: 33%;
+}
+
+.animation_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.gif_art {
+    max-width: 200px;
+    height: auto;
+    
+}
+
+.mike_sing {
+    max-width: 105% !important;
+    height: auto;
+    border-radius: 20px;
+}

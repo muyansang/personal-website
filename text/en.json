@@ -176,16 +176,28 @@
             "game_mechanics": "Game Mechanics"
         }, "game_ui" : {
             "title": "Character Design",
-            "design_goals": "Main Character Design Draft",
-            "ui1": {
-                "title": "Menu Screen",
-                "text": "The design principle of the menu screen aimed to create a lighthearted and cute vibe through a animated illustration. The animation is achieved through programming by changing the offsets of the UI elements with a osillation constant derived through sin/cos."
+            "design_goals": "Main Character \"Mike\" —— Design Draft",
+            "char1": {
+                "text": "I chose the final design for its strong sense of contrast — a kind, wide-eyed old man with a gentle demeanor feels far more engaging and emotionally resonant than an angry little guy. This contrast between his soft, caring appearance and the chaotic, demanding farm tasks creates a humorous and heartfelt dynamic that fits the game’s tone perfectly. His exaggerated posture and clean, expressive style also ensure strong visual clarity and player connection.",
+                "animation_title": "Mike's Animation",
+                "walk": "Walking Animation",
+                "hold_idol": "Holding Idol Animation",
+                "idol": "Idol Animation",
+                "water": "Watering Animation",
+                "sing": "Singing Animation",
+                "walk_hold": "Walking + Hold Animation"  
             },
-            "ui2": {
-                "title": "Transition",
-                "text": "Since the background story is about delivery and package, delivery box opening/closing is a creative and interesting ways of transitiong between the screen. This also align with UI button in Level Selection which also is a delivery box."
-            }, 
-            "ui3": {
+            "char2": {
+                "text": "Each plants was designed to be quirky but cute in their own way. All the animation shows the plant's small unique personality.",
+                "animation_title": "Plants' Animation",
+                "grass_idol": "Grass Idol Animation",
+                "grass_die": "Grass Dying Animation",
+                "flower_idol": "Flower Idol Animation",
+                "flower_die": "Flower Dying Animation",
+                "cactus_idol": "Cactus Idol Animation",
+                "cactus_die": "Cactus Dying Animation"
+            },
+            "char3": {
                 "title": "Level Selection",
                 "text": "Level selection page have a green/summer and a winter theme, this corresponded to different chapters, theme music represented in our game level. I designed it in a map scroller to invite players into the journey of Nox"
             },

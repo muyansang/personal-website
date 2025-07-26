@@ -175,8 +175,8 @@
             },
             "game_mechanics": "Game Mechanics"
         }, "game_ui" : {
-            "title": "Arts & Design",
-            "design_goals": "UI/UX Design",
+            "title": "Character Design",
+            "design_goals": "Main Character Design Draft",
             "ui1": {
                 "title": "Menu Screen",
                 "text": "The design principle of the menu screen aimed to create a lighthearted and cute vibe through a animated illustration. The animation is achieved through programming by changing the offsets of the UI elements with a osillation constant derived through sin/cos."
@@ -193,14 +193,14 @@
         },
 
         "game_mech": {
-            "title1": "Recognize and Assemble the Shape",
-            "text1": "Players must identify the anonymous shape displayed on the order board and assemble it using available enemies on the field.",
+            "title1": "Resolve Plant's Needs",
+            "text1": "Players will have to resolve the plant's need(s) before they died.",
             
-            "title2": "Color Matters",
-            "text2": "Colors play an important role. Except for pink pieces, which act as erasers, each color grants different bonus points to the final order score once completed.",
+            "title2": "Cow's Happiness & QTE",
+            "text2": "Players will have to keep their cow companion happy by playing a Quick Time Event (QTE) with the cow. Deceased cow will no longer be able to help players with their plants.",
             
-            "title3": "Made a Mistake? Use Erasers",
-            "text3": "Players can use erasers to correct misplaced pieces by throwing an eraser at the incorrect component."
+            "title3": "Over-treatment punishment",
+            "text3": "If players over-treated their plants, plants will die."
         },"programming" : {
             "title": "Programming",
             "tech1": {

@@ -283,3 +283,18 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+.character_wrap {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.character_draft {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}

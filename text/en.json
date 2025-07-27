@@ -134,117 +134,90 @@
         }
 
     },
-        "game2": {
-        "info": {
-            "title": "Info",
-            "role": {
-                "label": "Role:",
-                "value": "Game Designer, 2D Artist, 2d Animator"
-            },
-            "engine": {
-                "label": "Engine/Framework:",
-                "value": "Unity, Git"
-            },
-            "team": {
-                "label": "Team:",
-                "value": "Can't Open From This Side Studio - CiGA 2025 Game Jam"
-            },
-            "timeline": {
-                "label": "Timeline:",
-                "value": "Jun 27th 2025 - Jun 29th 2025"
-            }
+    "game2": {
+    "info": {
+        "title": "Info",
+        "role": {
+            "label": "Role:",
+            "value": "Game Designer, 2D Artist, 2d Animator"
         },
-        "intro" : {
-            "title": "The Game",
-            "text": "In a world where plants have become the new pets, E-I-E-I-Moo is a cozy farm sim about caring for foster plants and your emotional cow companion. Water, fertilize, and play music to meet each plant’s unique needs, while also keeping your loyal cow happy and healthy. Your mission: help all living things thrive. Build a soothing routine and discover the quiet joy of mindful caretaking."
+        "engine": {
+            "label": "Engine/Framework:",
+            "value": "Unity, Git"
         },
-        "game_design" : {
-            "title": "Game Design",
-            "design_goals": "Design Goals",
-            "card1": {
-                "title": "Race Against Time",
-                "text": "Players will have to resolve the plant's need(s) before they died beecause of it. Multiple plants will be on screen and they will have different needs at the same time, so players will have to prioritize which plant to take care of first."
-            },
-            "card2": {
-            "title": "Diversed Resolutions",
-            "text": "Each plant's needs require unique resolutions, ensuring gameplay stays fresh and non-repetitive. For example, watering and singing involve holding interactions, while sunbathing and fertilizing require placing the plant down and picking it up at the right time to avoid over-treatment."
-            },
-            "card3": {
-                "title": "More than Plants",
-                "text": "Besides keeping plants alive, players must also care for their loyal cow companion. The cow has its own needs and emotions, adding depth to the gameplay. Players must balance plant care with ensuring the cow's happiness with a Quick Time Event(QTE)."
-            },
-            "game_mechanics": "Game Mechanics"
-        }, "game_ui" : {
-            "title": "Character Design",
-            "design_goals": "Main Character \"Mike\" —— Design Draft",
-            "char1": {
-                "text": "I chose the final design for its strong sense of contrast — a kind, wide-eyed old man with a gentle demeanor feels far more engaging and emotionally resonant than an angry little guy. This contrast between his soft, caring appearance and the chaotic, demanding farm tasks creates a humorous and heartfelt dynamic that fits the game’s tone perfectly. His exaggerated posture and clean, expressive style also ensure strong visual clarity and player connection.",
-                "animation_title": "Mike's Animation",
-                "walk": "Walking Animation",
-                "hold_idol": "Holding Idol Animation",
-                "idol": "Idol Animation",
-                "water": "Watering Animation",
-                "sing": "Singing Animation",
-                "walk_hold": "Walking + Hold Animation"  
-            },
-            "char2": {
-                "text": "Each plants was designed to be quirky but cute in their own way. All the animation shows the plant's small unique personality.",
-                "animation_title": "Plants' Animation",
-                "grass_idol": "Grass's Idol Animation",
-                "grass_die": "Grass's Dying Animation",
-                "flower_idol": "Flower's Idol Animation",
-                "flower_die": "Flower's Dying Animation",
-                "cactus_idol": "Cactus's Idol Animation",
-                "cactus_die": "Cactus's Dying Animation",
-                "burn_die": "Dead (Over-sunbathing)",
-                "poop_die": "Dead (Over-fertilizing)"
-            },
-            "char3": {
-                "animation_title": "Cow's Animation",
-                "cow_idol": "Idol Animation",
-                "cow_poop": "Pooping Animation",
-                "cow_emo": "Depression Animation",
-                "cow_die": "Dying Animation"
-            },
-            "game_mechanics": "Game Mechanics"
+        "team": {
+            "label": "Team:",
+            "value": "Can't Open From This Side Studio - CiGA 2025 Game Jam"
         },
-
-        "game_mech": {
-            "title1": "Resolve Plant's Needs",
-            "text1": "Players will have to resolve the plant's need(s) before they died.",
-            
-            "title2": "Cow's Happiness & QTE",
-            "text2": "Players will have to keep their cow companion happy by playing a Quick Time Event (QTE) with the cow. Deceased cow will no longer be able to help players with their plants.",
-            
-            "title3": "Over-treatment punishment",
-            "text3": "If players over-treated their plants, plants will die."
-        },"programming" : {
-            "title": "Programming",
-            "tech1": {
-                "title": "Dependency Diagram",
-                "text": "The architecture of Toymare strictly follows the Model-View-Control (MVC) practice in Software Engineering. We define all objects in the 'Model' section and resolve interactions between models in the 'Control' section."
-            },
-            "tech2": {
-                "title": "Activity Diagram",
-                "text": "The Activity Diagram displays the resonale of our main Control classes, which is Game Scene and Gameplay Controller."
-            }, 
-            "tech3": {
-                "title": "Memory Management",
-                "text": "Toymare utilize a built-in class and repertoire of resource managing using AssestsDirectory. All textures was initialized in the screen before each screen, and passed to the constructor of the next screen and the next screen will read from this assetsDirectory. All screens directory will correspondingly disposed when players exit the screen. This practice effectively optimize number of textures loaded at once and memory management when the game runs."
-            },
-            "tech4": {
-                "title": "Tiled JSON Parsing",
-                "text": "Tiled is an APP designed for level designs and map design for 2D games using tilesets. In Tiled, our grid is defined by 45 * 23 cells, we will be able to mark which cell are special blocks (obstacles, spawnpoints and mud). We transpose the level design in Tiled by the JSON file Tiled had provided to us. The function below extracts essential information from the Json and stored as a field in GameScene Class."
-            }, 
-            "tech5": {
-                "title": "Animation through FSM and Bool Chain",
-                "subtitle1": "Order Update Animation with FSM",
-                "subtitle2": "Toy Complete Animation with Bool Chain",
-                "text1": "This code implements a finite state machine (FSM) to manage the animation flow of an in-game 'order' object. The OrderState enum defines discrete animation states and the updateAnimation(float dt) method transitions between them based on timers, flags, and conditions. Each state encapsulates specific animation logic, such as flipping, playing sound effects, or applying interpolated visual offsets. This FSM approach ensures clear, modular control over complex sequential animations, enabling smooth and predictable state transitions in the UI or gameplay.",
-                "text2": "This draw(SpriteBatch batch) method implements a sequential keyframe animation system using manual state flags and timers, simulating a mini finite state machine (FSM) for animating a 'combined toy' object. The animation progresses through four stages—shake, shrink-in, shrink-out, and bounce-back—each governed by its own timer and completion flag (shakeDone, shrinkInDone, etc.). The logic ensures smooth transitions through visual effects such as jittering, shrinking toward the center, expanding with sound feedback, and finally a bounce-back to resting scale. This fine-grained control enables expressive, multi-phase feedback upon toy combination, enhancing game feel and user satisfaction."
-            },
-            "game_mechanics": "Game Mechanics"
+        "timeline": {
+            "label": "Timeline:",
+            "value": "Jun 27th 2025 - Jun 29th 2025"
         }
+    },
+    "intro" : {
+        "title": "The Game",
+        "text": "In a world where plants have become the new pets, E-I-E-I-Moo is a cozy farm sim about caring for foster plants and your emotional cow companion. Water, fertilize, and play music to meet each plant’s unique needs, while also keeping your loyal cow happy and healthy. Your mission: help all living things thrive. Build a soothing routine and discover the quiet joy of mindful caretaking."
+    },
+    "game_design" : {
+        "title": "Game Design",
+        "design_goals": "Design Goals",
+        "card1": {
+            "title": "Race Against Time",
+            "text": "Players will have to resolve the plant's need(s) before they died beecause of it. Multiple plants will be on screen and they will have different needs at the same time, so players will have to prioritize which plant to take care of first."
+        },
+        "card2": {
+        "title": "Diversed Resolutions",
+        "text": "Each plant's needs require unique resolutions, ensuring gameplay stays fresh and non-repetitive. For example, watering and singing involve holding interactions, while sunbathing and fertilizing require placing the plant down and picking it up at the right time to avoid over-treatment."
+        },
+        "card3": {
+            "title": "More than Plants",
+            "text": "Besides keeping plants alive, players must also care for their loyal cow companion. The cow has its own needs and emotions, adding depth to the gameplay. Players must balance plant care with ensuring the cow's happiness with a Quick Time Event(QTE)."
+        },
+        "game_mechanics": "Game Mechanics"
+    }, "game_ui" : {
+        "title": "Character Design",
+        "design_goals": "Main Character \"Mike\" —— Design Draft",
+        "char1": {
+            "text": "I chose the final design for its strong sense of contrast — a kind, wide-eyed old man with a gentle demeanor feels far more engaging and emotionally resonant than an angry little guy. This contrast between his soft, caring appearance and the chaotic, demanding farm tasks creates a humorous and heartfelt dynamic that fits the game’s tone perfectly. His exaggerated posture and clean, expressive style also ensure strong visual clarity and player connection.",
+            "animation_title": "Mike's Animation",
+            "walk": "Walking Animation",
+            "hold_idol": "Holding Idol Animation",
+            "idol": "Idol Animation",
+            "water": "Watering Animation",
+            "sing": "Singing Animation",
+            "walk_hold": "Walking + Hold Animation"  
+        },
+        "char2": {
+            "text": "Each plants was designed to be quirky but cute in their own way. All the animation shows the plant's small unique personality.",
+            "animation_title": "Plants' Animation",
+            "grass_idol": "Grass's Idol Animation",
+            "grass_die": "Grass's Dying Animation",
+            "flower_idol": "Flower's Idol Animation",
+            "flower_die": "Flower's Dying Animation",
+            "cactus_idol": "Cactus's Idol Animation",
+            "cactus_die": "Cactus's Dying Animation",
+            "burn_die": "Dead (Over-sunbathing)",
+            "poop_die": "Dead (Over-fertilizing)"
+        },
+        "char3": {
+            "animation_title": "Cow's Animation",
+            "cow_idol": "Idol Animation",
+            "cow_poop": "Pooping Animation",
+            "cow_emo": "Depression Animation",
+            "cow_die": "Dying Animation"
+        },
+        "game_mechanics": "Game Mechanics"
+    },
 
+    "game_mech": {
+        "title1": "Resolve Plant's Needs",
+        "text1": "Players will have to resolve the plant's need(s) before they died.",
+        
+        "title2": "Cow's Happiness & QTE",
+        "text2": "Players will have to keep their cow companion happy by playing a Quick Time Event (QTE) with the cow. Deceased cow will no longer be able to help players with their plants.",
+        
+        "title3": "Over-treatment punishment",
+        "text3": "If players over-treated their plants, plants will die."
+    }
     }
 }

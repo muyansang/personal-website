@@ -11,19 +11,16 @@ body {
 }
 
 .fit_text_wrapper {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 h1.portfolio_title {
-  font-size: 23vw;
+  font-size: 80px;
   white-space: nowrap;
-
-  background: linear-gradient(to bottom, #ff5a4e, #0000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ff5a4e;
 }
 
 .portfolio {
@@ -154,13 +151,13 @@ h1.portfolio_title {
 .card_row {
   display: flex;
   flex-direction: row;
-  gap: 70px
+  gap: 45px
 }
 
 .card_column {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 30px;
   justify-content: center;
   align-items: center;
 }

@@ -8,7 +8,7 @@
     },
     "style_bar_text": "I'm a curious and ambitious game developer driven to create games that are not only fun through their mechanics but also grounded in meaningful themes—whether narrative, cultural, historical, or emotional. While I’m still early in my journey, I’m committed to learning every aspect of game development step by step, with the goal of one day building something truly impactful to me, player community or the world.",
     "portfolio": {
-        "title": "PORTFOLIO",
+        "title": "< PORTFOLIO >",
         "card_1": {
         "title": "Toymare",
         "genre": "Genre: Action + Puzzle",
@@ -19,6 +19,15 @@
         "title": "E-I-E-I-Moo",
         "genre": "Genre: Action + Stimulation",
         "description": "A \"cozy\" plant care and farm sim where you nurture foster plants and emotionally support your loyal cow companion.",
+        "button": "View More"
+        }
+    },
+        "narrative": {
+        "title": "< NARRATIVES & SCREENPLAYS >",
+        "card_1": {
+        "title": "Death of Dancer",
+        "genre": "Genre: Action + Puzzle",
+        "description": "A fast-paced puzzle-action game where a delivery cat assembles toys to fulfill orders in chaos.",
         "button": "View More"
         }
     },
